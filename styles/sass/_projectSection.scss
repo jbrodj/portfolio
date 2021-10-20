@@ -1,0 +1,19 @@
+.projectContainer {
+    display: flex;
+    position: relative;
+    margin: 5rem 0;
+
+
+    :nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+    // img {
+
+    // }
+}
+
+.toolsUsed {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}

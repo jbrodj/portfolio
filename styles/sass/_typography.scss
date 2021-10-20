@@ -1,3 +1,29 @@
+
+
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.sectionHeading {
+    h2 {
+        text-transform: uppercase;
+    }
+    p {
+        font-family: 'Playfair Display', serif;
+        // color: lightseagreen
+    }
+}
+    
+
 h1 {
-    color: lightseagreen;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+i {
+    font-size: 4rem;
 }

@@ -249,16 +249,6 @@ button, a {
   color: inherit;
 }
 
-button {
-  border: 0;
-  text-transform: none;
-}
-
-a {
-  text-decoration: none;
-  font-size: 100%;
-}
-
 ul {
   list-style: none;
 }
@@ -267,11 +257,383 @@ img {
   max-width: 100%;
 }
 
+button {
+  border: 0;
+  text-transform: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 100%;
+  color: lightseagreen;
+}
+
 .wrapper {
-  width: 80%;
+  width: 70%;
   max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 8rem auto;
+}
+
+.sectionHeading {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+}
+.sectionHeading p {
+  margin-left: 5rem;
+}
+.sectionHeading span {
+  border-left: 3px solid lightseagreen;
+  display: inline-block;
+  height: 2.5rem;
+  padding-right: 0.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.sectionHeading h2 {
+  text-transform: uppercase;
+}
+.sectionHeading p {
+  font-family: "Playfair Display", serif;
 }
 
 h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+i {
+  font-size: 4rem;
+}
+
+header {
+  height: 100vh;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: mediumaquamarine;
+  position: relative;
+  padding: 6rem 0;
+}
+header nav {
+  position: absolute;
+}
+
+.headerCopy {
+  margin: 0 auto;
+  text-align: right;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+.arrow-up {
+  margin-top: 0.5rem;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid rebeccapurple;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ff5436;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid gold;
+}
+
+.mainLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: #F6F2D8;
+  padding: 0 0 0.25rem 0;
+}
+
+.b-design {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: #F6F2D8;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+}
+
+.headRear {
+  background-color: lightseagreen;
+  background-color: #bbf0ed;
+  height: 50%;
+  width: 50%;
+  border-radius: 100% 100% 100% 0;
+  position: absolute;
+  top: 2.5%;
+  left: 25%;
+  z-index: 1;
+}
+
+.headFront {
+  background-color: #bbf0ed;
+  height: 50%;
+  width: 50%;
+  border-radius: 100%;
+  /* border bottom needs to be ~ 0.75% of container height */
+  border-bottom: 2px solid lightseagreen;
+  position: absolute;
+  top: 2.5%;
+  left: 25%;
+  z-index: 2;
+  -webkit-transform: rotate(-65deg);
+          transform: rotate(-65deg);
+}
+
+.bodyBox {
+  background-color: #bbf0ed;
+  height: 60%;
+  width: 57.5%;
+  border-radius: 0 100% 100% 0;
+  position: absolute;
+  top: 37.5%;
+  left: 25%;
+  /* border top needs to be 15% of container height */
+  border-top: 42.5px solid gold;
+}
+
+.outerEye {
+  background-color: white;
+  background-color: lightseagreen;
+  height: 20%;
+  width: 20%;
+  border-radius: 100%;
+  position: absolute;
+  top: 17.5%;
+  left: 40%;
+  z-index: 2;
+}
+
+.eyelid {
+  background-color: white;
+  background-color: lightseagreen;
+  height: 15%;
+  width: 20%;
+  border-radius: 100%;
+  border-bottom: 3px solid #bbf0ed;
+  position: absolute;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  top: 20%;
+  left: 40%;
+  z-index: 2;
+}
+
+.beakSeam {
+  height: 3%;
+  width: 15%;
+  background-color: gold;
+  /* border top needs to be ~0.75% of container height */
+  border-top: 3px solid white;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 60%;
+  z-index: 1;
+  -webkit-transform: rotate(28deg);
+          transform: rotate(28deg);
+}
+
+.wingCircle {
+  background-color: white;
+  background-color: lightseagreen;
+  height: 20%;
+  width: 20%;
+  border-radius: 100%;
+  position: absolute;
+  top: 57.5%;
+  left: 40%;
+  z-index: 3;
+}
+
+.wingTip {
+  width: 27.5%;
+  height: 20%;
+  border-radius: 50%;
+  -webkit-box-shadow: 6.25% 3.75% 0 0 white;
+          box-shadow: 6.25% 3.75% 0 0 white;
+  /* Pixel values for box shadow need to be 6.25% and 3.75% of the container height */
+  -webkit-box-shadow: 20px 12.5px 0 0 lightseagreen;
+          box-shadow: 20px 12.5px 0 0 lightseagreen;
+  position: absolute;
+  top: 65%;
+  left: 27.5%;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  z-index: 3;
+}
+
+.aboutSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutCopy, .aboutImg {
+  width: 50%;
+}
+
+.aboutCopy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  margin-left: -4rem;
+  padding: 3rem 0;
+  width: 55%;
+  z-index: 1;
+}
+.aboutCopy p {
+  margin: 1rem 0;
+  width: 75%;
+}
+.aboutCopy a {
+  position: absolute;
+  bottom: 0;
+  right: 6rem;
+  border-bottom: 3px solid lightseagreen;
+}
+.aboutCopy :first-child {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: lightseagreen;
+  width: 100%;
+}
+.aboutImg {
+  position: relative;
+  width: 50%;
+}
+.aboutImg img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
+}
+
+.dashAccent {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  height: 31rem;
+  width: 31rem;
+  border-radius: 50%;
+  border: 0.25rem dotted rgba(102, 51, 153, 0.493);
+  z-index: -1;
+}
+
+.projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 5rem 0;
+}
+.projectContainer :nth-of-type(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.toolsUsed {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
 }

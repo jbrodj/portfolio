@@ -1,0 +1,23 @@
+header {
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: mediumaquamarine;
+    position: relative;
+    padding: 6rem 0;
+    nav {
+    position: absolute;
+}
+}
+
+.headerCopy {
+    margin: 0 auto;
+    text-align: right;
+}
+
+h1 {
+    margin: 0 auto;
+}
