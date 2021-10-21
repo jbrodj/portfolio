@@ -907,10 +907,10 @@ section p,
     background-position: 0 center;
   }
   .aboutSection .aboutImg div {
-    width: 95%;
+    width: 65%;
     height: 140%;
-    top: -15%;
-    left: 2.5%;
+    top: -17.5%;
+    left: 17.5%;
   }
   .aboutSection .aboutImg img, .aboutSection .aboutImg .overlay {
     display: none;
