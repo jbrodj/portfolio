@@ -282,6 +282,7 @@ a {
 
 section {
   margin: 8rem auto;
+  min-height: calc(100vh - 16rem);
 }
 
 .sectionHeading {
@@ -299,10 +300,10 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem;
+  padding: 6rem 1rem;
 }
 .sectionHeading p {
-  margin-left: 5rem;
+  margin-left: 4.75rem;
 }
 .sectionHeading span {
   border-left: 3px solid lightseagreen;
@@ -314,6 +315,21 @@ section {
 h2 {
   font-size: 3rem;
   font-weight: bold;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6rem;
+  text-align: center;
+  background-color: rgba(32, 178, 171, 0.157);
 }
 
 html {
@@ -339,6 +355,7 @@ i {
 
 header {
   height: 100vh;
+  min-height: 800px;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,6 +377,23 @@ header nav {
   position: absolute;
 }
 
+.headerWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 600px;
+  position: relative;
+}
+
 .headerCopy {
   margin: 0 auto;
   text-align: right;
@@ -369,13 +403,29 @@ h1 {
   margin: 0 auto;
 }
 
+.arrowBuddies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 0 0;
+}
+.arrowBuddies div {
+  margin: 0.5rem 0;
+}
+
 .arrow-up {
-  margin-top: 0.5rem;
   width: 0;
   height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid rebeccapurple;
+  border-bottom: 7px solid #9273a7;
 }
 
 .arrow-down {
@@ -411,7 +461,7 @@ h1 {
   padding: 0 0 0.25rem 0;
 }
 
-.b-design {
+.bContainer {
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -531,6 +581,7 @@ h1 {
 }
 
 .aboutSection {
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,6 +621,7 @@ h1 {
   margin-left: -4rem;
   padding: 3rem 0;
   width: 55%;
+  width: calc(50% + 4rem);
   z-index: 1;
 }
 .aboutCopy p {
@@ -588,6 +640,7 @@ h1 {
   color: lightseagreen;
   width: 100%;
 }
+
 .aboutImg {
   position: relative;
   width: 50%;
@@ -603,37 +656,181 @@ h1 {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
 }
 
 .dashAccent {
   position: absolute;
-  top: 4rem;
-  right: 4rem;
-  height: 31rem;
-  width: 31rem;
+  top: 2rem;
+  left: -6rem;
+  height: 29rem;
+  width: 29rem;
   border-radius: 50%;
   border: 0.25rem dotted rgba(102, 51, 153, 0.493);
   z-index: -1;
+}
+
+.projectSection .sectionHeading p {
+  margin-left: 6rem;
 }
 
 .projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  margin: 5rem 0;
+  margin-bottom: 8rem;
 }
-.projectContainer :nth-of-type(2) {
+.projectContainer .projectCopy {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+  width: 42.5%;
+  z-index: 1;
+}
+.projectContainer .projectImg {
+  position: relative;
+  width: 52.5%;
+}
+.projectContainer p {
+  margin: 1rem 0;
+}
+.projectContainer a {
+  border-bottom: 3px solid lightseagreen;
+}
+.projectContainer a:last-of-type {
+  margin-left: 0.75rem;
+}
+.projectContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projectLinks {
+  text-align: left;
+}
+
+.projectContainer:nth-of-type(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+.projectContainer:nth-of-type(2n) .projectCopy {
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  text-align: left;
+}
+.projectContainer:nth-of-type(2n) .projectLinks {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.projectContainer:nth-of-type(2n) a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
 
-.toolsUsed {
+.projectImg > div {
+  height: 100%;
+  width: 100%;
   position: absolute;
-  bottom: 0;
-  margin: 0 auto;
+  z-index: -1;
+}
+
+.leftAccent {
+  right: 3rem;
+  top: 1.5rem;
+}
+
+.rightAccent {
+  left: 3rem;
+  top: 1.5rem;
+}
+
+.proj1 .projectLinks a {
+  color: #857EA9;
+  border-bottom: 3px solid #857EA9;
+}
+.proj1 .projectImg > div {
+  border: 0.25rem dotted #ecdcc3a9;
+}
+
+.proj2 .projectLinks a {
+  color: #4d203cbc;
+  border-bottom: 3px solid #4d203cbc;
+}
+.proj2 .projectImg > div {
+  border: 0.25rem dotted #3b2a3d4f;
+}
+
+.proj3 .projectLinks a {
+  color: #737593;
+  border-bottom: 3px solid #737593;
+}
+.proj3 .projectImg > div {
+  border: 0.25rem dotted #CBCCE9;
+}
+
+.proj4 .projectLinks a {
+  color: #DD862C;
+  border-bottom: 3px solid #DD862C;
+}
+.proj4 .projectImg > div {
+  border: 0.25rem dotted #dd872c4f;
+}
+
+.contactSection {
+  min-height: 0vh;
+  margin-bottom: 6rem;
+}
+.contactSection .sectionHeading p {
+  margin-left: 6rem;
+}
+
+.contactCopy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contactInfo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contactInfo a {
+  padding: 0.25rem;
+  text-transform: none;
+  letter-spacing: 0.05rem;
+}
+.contactInfo p {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contactNav {
+  margin-bottom: 2rem;
+}
+.contactNav i {
+  font-size: 2rem;
+  margin: 0 1rem;
 }

@@ -57,6 +57,7 @@ a {
 
 section {
     margin: 8rem auto;
+    min-height: calc(100vh - 16rem);
 }
 
 .sectionHeading {
@@ -65,10 +66,10 @@ section {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 6rem 1rem;
 
     p {
-        margin-left: 5rem;
+        margin-left: 4.75rem;
     }
     span {
         border-left: 3px solid lightseagreen;
@@ -82,4 +83,14 @@ section {
 h2 {
     font-size: 3rem;
     font-weight: bold;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    text-align: center;
+    background-color: rgba(32, 178, 171, 0.157);
 }

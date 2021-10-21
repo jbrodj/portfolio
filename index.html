@@ -16,32 +16,38 @@
 </head>
 <body>
     <header>
-        <nav class="headerNav">
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
-        <div class="headerCopy">
-            <h1>J Brodie <span>Day</span></h1>
-            <p>Front-end Developer</p>
-        </div>
-        <div class="arrow-up"></div>
-        <div class="arrow-down"></div>
-        <div class="arrow-left"></div>
-        <div class="arrow-right"></div>
-        <div class="mainLogo">
-            <div class="b-design">
-                <div class="headRear"></div>
-                <div class="headFront"></div>
-                <div class="bodyBox"></div>
-                <div class="outerEye"></div>
-                <div class="eyelid"></div>
-                <div class="wingCircle"></div>
-                <div class="wingTip"></div>
-                <div class="beakSeam"></div>
-                <div class="box23"></div>
+        <div class="headerWrapper">
+
+            <nav class="headerNav">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+            
+            <div class="headerCopy">
+                <h1>J Brodie <span>Day</span></h1>
+                <p>Front-end Developer</p>
+            </div>
+            <div class="arrowBuddies">
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+                <div class="arrow-left"></div>
+                <div class="arrow-right"></div>
+            </div>
+            <div class="mainLogo">
+                <div class="bContainer">
+                    <div class="headRear"></div>
+                    <div class="headFront"></div>
+                    <div class="bodyBox"></div>
+                    <div class="outerEye"></div>
+                    <div class="eyelid"></div>
+                    <div class="wingCircle"></div>
+                    <div class="wingTip"></div>
+                    <div class="beakSeam"></div>
+                    <!-- <div class="box23"></div> -->
+                </div>
             </div>
         </div>
         
@@ -69,72 +75,94 @@
         </div>
     </section>
         
-    <section class="projectSection" id="projectSection">
+    <section class="projectSection">
         <div class="wrapper">            
             <div class="sectionHeading">
                 <h2>My work</h2>
-                <p><span></span>rad projects</p>
+                <p id="projectSection"><span></span>rad projects</p>
             </div>
 
             <div class="allProjects">
-                <article class="projectContainer">
+                <article class="projectContainer proj1">
                     <div class="projectCopy">
                         <h3>iBag of Holding</h3>
-                        <p>Inventory app for your D&D party build in React, and using Firebase to store persistent data.</p>
-                        <a href="">Live</a>
-                        <a href="">Repo</a>
+                        <p>Inventory app for your D&D party built in React, and using Firebase to store persistent data.</p>
+                        <div class="projectLinks">
+                            <a href="">Live</a>
+                            <a href="">Repo</a>
+                        </div>
                     </div>
-                    <img src="./assets/ibagOfHolding.png" alt="Screenshot of D&D inventory app showing an input form and several items stored in an inventory list.">
-                    <div class="toolsUsed">
+                    <div class="projectImg">
+                        <div class="leftAccent proj1"></div>
+                        <img src="./assets/ibagOfHolding.jpg" alt="Screenshot of D&D inventory app showing an input form and several items stored in an inventory list.">
+                    </div>
+                    <!-- <div class="toolsUsed">
                         <i class="devicon-html5-plain"></i>
                         <i class="devicon-css3-plain"></i>
                         <i class="devicon-react-original"></i>
                         <i class="devicon-firebase-plain"></i>
-                    </div>
+                    </div> -->
                 </article>
-                <article class="projectContainer">
+                <article class="projectContainer proj2">
                     <div class="projectCopy">
                         <h3>Let's Watch a Movie With...</h3>
                         <p>Movie finder app that generates a list of recommended movies based on multiple optional user inputs. This project was built using JavaScript with the Open Movie Database API as a paired programming project.</p>
-                        <a href="">Live</a>
-                        <a href="">Repo</a>
+                        <div class="projectLinks">
+                            <a href="">Live</a>
+                            <a href="">Repo</a>
+                        </div>
                     </div>
-                    <img src="./assets/letsWatchAMovie.png" alt="Screenshot of a movie recommendation app with a stylized title and input form.">
-                    <div class="toolsUsed">
+                    <div class="projectImg">
+                        <div class="rightAccent"></div>
+                        <img src="./assets/letsWatchAMovie.jpg" alt="Screenshot of a movie recommendation app with a stylized title and input form.">
+                    </div>
+                    <!-- <div class="toolsUsed paired">
                         <i class="fas fa-user-friends"></i>
                         <i class="devicon-html5-plain"></i>
                         <i class="devicon-css3-plain"></i>
                         <i class="devicon-javascript-plain"></i>
-                    </div>
+                    </div> -->
                 </article>
-                <article class="projectContainer">
-                    <div class="projectCopy">
-                        <h3>Bar One (PSD Conversion)</h3>
-                        <p>Full responsive multi-page PSD conversion for a fictional nightlife venue!</p>
-                        <a href="">Live</a>
-                        <a href="">Repo</a>
-                    </div>
-                    <img src="./assets/barOneConversion.png" alt="Screenshot of the landing page of a website for a fictional bar featuring a navigation bar and a heading overlaid on greyscale images of bar settings.">
-                    <div class="toolsUsed">
-                        <i class="devicon-html5-plain"></i>
-                        <i class="devicon-css3-plain"></i>
-                        <i class="devicon-sass-original"></i>
-                    </div>
-                </article>    
-                <article class="projectContainer">
+                <article class="projectContainer proj3">
                     <div class="projectCopy">
                         <h3>Which Game Should We Play?!</h3>
-                        <p>Board game recommendation app built in jQuery using the Board Game Atlas API. It features multiple range sliders for providing user input for number of players, age, and length of the game!</p>
-                        <a href="">Live</a>
-                        <a href="">Repo</a>
+                        <p>Board game recommendation app built in jQuery using the Board Game Atlas API. It features multiple range
+                            sliders for providing user input for number of players, age, and length of the game!</p>
+                        <div class="projectLinks">
+                            <a href="">Live</a>
+                            <a href="">Repo</a>
+                        </div>
                     </div>
-                    <img src="./assets/boardGameFinder.png" alt="Screenshot of the primary interface of a board game recommendation app featuring an input form with several range sliders.">
-                    <div class="toolsUsed">
+                    <div class="projectImg">
+                        <div class="leftAccent"></div>
+                        <img src="./assets/boardGameFinder.jpg"
+                            alt="Screenshot of the primary interface of a board game recommendation app featuring an input form with several range sliders.">
+                    </div>
+                    <!-- <div class="toolsUsed">
                         <i class="devicon-html5-plain"></i>
                         <i class="devicon-css3-plain"></i>
                         <i class="devicon-jquery-plain"></i>
                         <i class="devicon-javascript-plain"></i>
+                    </div> -->
+                </article>
+                <article class="projectContainer proj4">
+                    <div class="projectCopy">
+                        <h3>Bar One (PSD Conversion)</h3>
+                        <p>Full responsive multi-page PSD conversion for a fictional nightlife venue!</p>
+                        <div class="projectLinks">
+                            <a href="">Live</a>
+                            <a href="">Repo</a>
+                        </div>
                     </div>
+                    <div class="projectImg">
+                        <div class="rightAccent"></div>
+                        <img src="./assets/barOneConversion.jpg" alt="Screenshot of the landing page of a website for a fictional bar featuring a navigation bar and a heading overlaid on greyscale images of bar settings.">
+                    </div>
+                    <!-- <div class="toolsUsed">
+                        <i class="devicon-html5-plain"></i>
+                        <i class="devicon-css3-plain"></i>
+                        <i class="devicon-sass-original"></i>
+                    </div> -->
                 </article>
             </div>
         </div>
@@ -145,57 +173,36 @@
             <h2>Contact</h2>
             <p><span></span>get in touch</p>
         </div>
-        <div class="contactInfo">
-            <a href="">jbrodieday@gmail.com</a>
-            <p>647 270 8577</p>
-        </div>
-        <nav class="contactNav">
-            <a href="https://github.com/jbrodj">
-                <i class="devicon-github-original"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/j-brodie-day-3b2775219/">
-                <i class="devicon-linkedin-plain"></i>
-            </a>
-            <a href="https://twitter.com/jbrodj">
-                <i class="devicon-twitter-original"></i>
-            </a>
+        <div class="contactCopy">
+            <div class="contactInfo">
+                <a href="mailto:jbrodieday@gmail.com">jbrodieday@gmail.com</a>
+                <p>647.270.8577</p>
+            </div>
+            <nav class="contactNav">
+                <a href="https://github.com/jbrodj" target="blank">
+                    <i class="devicon-github-original"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/j-brodie-day-3b2775219/" target="blank">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
+                <a href="https://twitter.com/jbrodj" target="blank">
+                    <i class="devicon-twitter-original"></i>
+                </a>
+            </nav>
 
-        </nav>
+            <div class="resumeContainer">
+                <h3>Download my resume</h3>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+            </div>
+        </div>
     </section>
 
-
-    <!-- <section class="skillsSection">
+    <footer>
         <div class="wrapper">
-            <ul>
-                <li>
-                    <i class="devicon-html5-plain"></i>
-                </li>
-                <li>
-                    <i class="devicon-css3-plain"></i>
-                </li>
-                <li>
-                    <i class="devicon-javascript-plain"></i>
-                </li>
-                <li>
-                    <i class="devicon-react-original"></i>
-                </li>
-                <li>
-                    <i class="devicon-jquery-plain"></i>
-                </li>
-                <li>
-                    <i class="devicon-github-original"></i>
-                </li>
-                <li>
-                    <i class="devicon-firebase-plain"></i>
-                </li>
-                <li>
-                    <i class="devicon-sass-original"></i>
-                </li>
-                <li>
-
-                </li>
-            </ul>
+            <p>Made by J Brodie Day</p>
         </div>
-    </section> -->
+    </footer>
 </body>
 </html>
