@@ -863,6 +863,24 @@ section p,
     height: 1.5rem;
   }
 
+  header {
+    padding: 4rem 0 2rem 0;
+    min-height: 0;
+  }
+
+  .headerWrapper {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .mainLogo {
+    border-radius: 50%;
+    -webkit-transform: scale(80%);
+            transform: scale(80%);
+  }
+
   .aboutSection .sectionHeading p {
     margin-left: 3.3rem;
   }
@@ -887,6 +905,12 @@ section p,
     background-image: url(../../assets/keyboardImage.jpg);
     background-size: cover;
     background-position: 0 center;
+  }
+  .aboutSection .aboutImg div {
+    width: 95%;
+    height: 140%;
+    top: -15%;
+    left: 2.5%;
   }
   .aboutSection .aboutImg img, .aboutSection .aboutImg .overlay {
     display: none;
@@ -917,6 +941,19 @@ section p,
     padding: 0;
     margin-top: 1.75rem;
   }
+  .projectSection .projectImg div {
+    top: -8%;
+    left: 5%;
+    height: 115%;
+    width: 85%;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  .projectSection .projectImg .leftAccent {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
   .contactSection {
     margin-bottom: 2rem;
   }
