@@ -52,10 +52,16 @@ h1 {
     margin-top: 1rem;
 }
 
+.arrowLink:hover,
+.arrowLink:focus {
+    border: none;
+}
+
 .arrowLink:hover .downArrow,
 .arrowLink:focus-within .downArrow {
     border-bottom: 0.5rem dotted $lightColor;
     border-right: 0.5rem dotted $lightColor;
+
 }
 
 .downArrow {

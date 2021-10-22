@@ -443,6 +443,11 @@ h1 {
   margin-top: 1rem;
 }
 
+.arrowLink:hover,
+.arrowLink:focus {
+  border: none;
+}
+
 .arrowLink:hover .downArrow,
 .arrowLink:focus-within .downArrow {
   border-bottom: 0.5rem dotted #A6ECFF;
@@ -682,11 +687,11 @@ h1 {
 .aboutCopy .sectionLink {
   position: absolute;
   bottom: 0;
-  right: 3rem;
+  right: 0.95rem;
   border-bottom: 3px solid lightseagreen;
 }
 .aboutCopy .sectionLink:nth-of-type(2) {
-  right: 12rem;
+  right: 9.7rem;
 }
 .aboutCopy :first-child {
   font-size: 1.5rem;
@@ -1163,6 +1168,16 @@ section p,
   }
   .aboutSection .aboutImg img, .aboutSection .aboutImg .overlay {
     display: none;
+  }
+  .aboutSection .sectionLink {
+    position: relative;
+    margin: 0 auto;
+    right: 0rem;
+    border-bottom: 3px solid lightseagreen;
+  }
+  .aboutSection .sectionLink:nth-of-type(2) {
+    margin: 1rem auto 0 auto;
+    right: 0rem;
   }
 
   .projectSection .allProjects article:last-of-type {
