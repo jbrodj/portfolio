@@ -1,7 +1,7 @@
 .projectSection {
     background-color: $angleBackground;
     position: relative;
-    z-index: -2;
+    z-index: 1;
     padding-bottom: 2rem;
 
     .sectionHeading p {
@@ -21,21 +21,18 @@
         display: flex;
         flex-direction: column;
         text-align: right;
-        // margin: 0 -5rem 0 0;
         width: 42.5%;
-        z-index: 1;
     }
 
     .projectImg {
         position: relative;
         width: 52.5%;
-
+        z-index: 1;
         img {
             min-height: 280px;
             object-fit: cover;
-
+            z-index: -2;
         }
-
     }
 
     p {
@@ -57,10 +54,6 @@
     //     color: #fff;
     // }
 
-    // img {
-    //     object-fit: cover;
-    // }
-    
 }
 
 .projectLinks {
@@ -82,7 +75,6 @@
     .projectCopy {
         padding: 1.5rem 0 1.5rem 1.5rem;
         text-align: left;
-        // margin: 0 0 0 -5rem;
     }
 
     .projectLinks {
@@ -92,6 +84,8 @@
     a {
         align-self: flex-end;
     }
+
+    // I might still use this in a future revision.
 
     // .toolsUsed {
     //     margin: 0 -27.5% 0 0;
@@ -116,7 +110,7 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: -3;
 }
 
 .leftAccent {

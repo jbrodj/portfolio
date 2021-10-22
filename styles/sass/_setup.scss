@@ -49,17 +49,16 @@ a {
     font-weight: 700;
     font-size: 100%;
     color: lightseagreen;
-    // color: #66cdaa;
 }
 
-        a:hover,
-        a:focus, 
-        .aboutSection a:hover,
-        section .projectSection a:focus,
-        .projectSection a:hover {
-            color: gold;
-            border-bottom: 3px solid gold;
-        }
+a:hover,
+a:focus, 
+.aboutSection a:hover,
+section .projectSection a:focus,
+.projectSection a:hover {
+    color: gold;
+    border-bottom: 3px solid gold;
+}
 
 .wrapper {
     width: 80%;
@@ -89,7 +88,6 @@ section {
     justify-content: center;
     align-items: center;
     padding: 3rem 1rem;
-
     p {
         margin-left: 4.75rem;
     }
@@ -98,7 +96,6 @@ section {
         display: inline-block;
         height: 2.5rem;
         padding-right: 0.5rem;
-
     }
 }
 
@@ -107,12 +104,11 @@ h2 {
     font-weight: bold;
 }
 
-
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6rem;
     text-align: center;
-    background-color: rgba(32, 178, 171, 0.157);
+    background-color: rgb(240, 246, 246);
 }

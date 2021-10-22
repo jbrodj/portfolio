@@ -16,10 +16,8 @@
 }
 
 .contactCopy {
-    // height: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -31,7 +29,6 @@
         padding: 0.25rem;
         text-transform: none;
         letter-spacing: 0.05rem;
-    
     }
     p {
         font-weight: 700;
@@ -49,19 +46,19 @@
     }
 }
 
-    .resumeContainer {
-        h3 {
-            margin: 1rem;
-            position: relative;
-        }
-        
-        a{
-            display: block;
-            border: 3px solid white;
-            width: 12rem;
-            margin: 0 auto;
-        }
-        a.resumeLink:hover, a.resumeLink:focus .resume {
-            border: 3px solid gold;
-        }
+.resumeContainer {
+    h3 {
+        font-size: 1rem;
+        margin: 1rem;
+        position: relative;
     }
+    a{
+        display: block;
+        border: 3px solid white;
+        width: 12rem;
+        margin: 0 auto;
+    }
+    a.resumeLink:hover, a.resumeLink:focus .resume {
+        border: 3px solid gold;
+    }
+}

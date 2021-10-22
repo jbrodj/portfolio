@@ -350,7 +350,7 @@ footer {
           align-items: center;
   height: 6rem;
   text-align: center;
-  background-color: rgba(32, 178, 171, 0.157);
+  background-color: #f0f6f6;
 }
 
 html {
@@ -533,7 +533,6 @@ h1 {
 }
 
 .headRear {
-  background-color: #bbf0ed;
   background-color: #A6ECFF;
   height: 50%;
   width: 50%;
@@ -545,13 +544,11 @@ h1 {
 }
 
 .headFront {
-  background-color: #bbf0ed;
   background-color: #A6ECFF;
   height: 50%;
   width: 50%;
   border-radius: 100%;
   /* border bottom needs to be ~ 0.75% of container height */
-  border-bottom: 2px solid lightseagreen;
   border-bottom: 2px solid #70B8CC;
   position: absolute;
   top: 2.5%;
@@ -562,7 +559,6 @@ h1 {
 }
 
 .bodyBox {
-  background-color: #bbf0ed;
   background-color: #A6ECFF;
   height: 60%;
   width: 57.5%;
@@ -572,12 +568,9 @@ h1 {
   left: 25%;
   /* border top needs to be 15% of container height */
   border-top: 42.5px solid gold;
-  border-top: 42.5px solid gold;
 }
 
 .outerEye {
-  background-color: white;
-  background-color: lightseagreen;
   background-color: #70B8CC;
   height: 20%;
   width: 20%;
@@ -589,13 +582,10 @@ h1 {
 }
 
 .eyelid {
-  background-color: white;
-  background-color: lightseagreen;
   background-color: #70B8CC;
   height: 15%;
   width: 20%;
   border-radius: 100%;
-  border-bottom: 3px solid #bbf0ed;
   border-bottom: 3px solid #A6ECFF;
   position: absolute;
   -webkit-transform: rotate(20deg);
@@ -622,7 +612,6 @@ h1 {
 
 .wingCircle {
   background-color: white;
-  background-color: lightseagreen;
   background-color: #70B8CC;
   height: 20%;
   width: 20%;
@@ -640,8 +629,6 @@ h1 {
   -webkit-box-shadow: 6.25% 3.75% 0 0 white;
           box-shadow: 6.25% 3.75% 0 0 white;
   /* Pixel values for box shadow need to be 6.25% and 3.75% of the container height */
-  -webkit-box-shadow: 20px 12.5px 0 0 lightseagreen;
-          box-shadow: 20px 12.5px 0 0 lightseagreen;
   -webkit-box-shadow: 20px 12.5px 0 0 #70B8CC;
           box-shadow: 20px 12.5px 0 0 #70B8CC;
   position: absolute;
@@ -761,7 +748,7 @@ h1 {
 .projectSection {
   background-color: #f0f6f6;
   position: relative;
-  z-index: -2;
+  z-index: 1;
   padding-bottom: 2rem;
 }
 .projectSection .sectionHeading p {
@@ -792,16 +779,17 @@ h1 {
           flex-direction: column;
   text-align: right;
   width: 42.5%;
-  z-index: 1;
 }
 .projectContainer .projectImg {
   position: relative;
   width: 52.5%;
+  z-index: 1;
 }
 .projectContainer .projectImg img {
   min-height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -2;
 }
 .projectContainer p {
   margin: 1rem 0;
@@ -840,7 +828,7 @@ h1 {
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: -1;
+  z-index: -3;
 }
 
 .leftAccent {
@@ -970,6 +958,7 @@ h1 {
 }
 
 .resumeContainer h3 {
+  font-size: 1rem;
   margin: 1rem;
   position: relative;
 }

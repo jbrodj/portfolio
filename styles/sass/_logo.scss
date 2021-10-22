@@ -1,3 +1,5 @@
+// ===TRIANGLE BUDDIES===
+
 .triangleUp {
     width: 0; 
     height: 0; 
@@ -22,6 +24,8 @@
     border-right:10px solid gold; 
 }
 
+// ===BIRB LOGO===
+
 .mainLogo {
     display: flex;
     justify-content: center;
@@ -37,16 +41,11 @@
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    // border: 5px solid #F6F2D8;
-    // background-color: #F6F2D8;
-    // background-color: rgba(255, 255, 255, 0);
     position: relative;
 }
 
 .headRear {
-    // background-color: lightseagreen;
-    // background-color: $darkColor;
-    background-color: rgb(187, 240, 237);
+
     background-color: $lightColor;
     height: 50%;
     width: 50%;
@@ -58,13 +57,11 @@
 }
 
 .headFront {
-    background-color: rgb(187, 240, 237);
     background-color: $lightColor;
     height: 50%;
     width: 50%;
     border-radius: 100%;
     /* border bottom needs to be ~ 0.75% of container height */
-    border-bottom: 2px solid lightseagreen;
     border-bottom: 2px solid $darkColor;
     position: absolute;
     top: 2.5%;
@@ -73,7 +70,6 @@
     transform: rotate(-65deg);
 }
 .bodyBox {
-    background-color: rgb(187, 240, 237);
     background-color: $lightColor;
     height: 60%;
     width: 57.5%;
@@ -82,13 +78,10 @@
     top: 37.5%;
     left: 25%;
     /* border top needs to be 15% of container height */
-    border-top: 42.5px solid gold;
     border-top: 42.5px solid $beakAccentColor;
 }
 
 .outerEye {
-    background-color: white;
-    background-color: lightseagreen;
     background-color: $darkColor;
     height: 20%;
     width: 20%;
@@ -99,13 +92,10 @@
     z-index: 2;
 }
 .eyelid {
-    background-color: white;
-    background-color: lightseagreen;
     background-color: $darkColor;
     height: 15%;
     width: 20%;
     border-radius: 100%;
-    border-bottom: 3px solid rgb(187, 240, 237);
     border-bottom: 3px solid $lightColor;
     position: absolute;
     transform: rotate(20deg);
@@ -128,7 +118,6 @@
 }
 .wingCircle {
     background-color: white;
-    background-color: lightseagreen;
     background-color: $darkColor;
     height: 20%;
     width: 20%;
@@ -145,7 +134,6 @@
     border-radius: 50%;
     box-shadow: 6.25% 3.75% 0 0 white;
     /* Pixel values for box shadow need to be 6.25% and 3.75% of the container height */
-    box-shadow: 20px 12.5px 0 0 lightseagreen;
     box-shadow: 20px 12.5px 0 0 $darkColor;
     
     position: absolute;
@@ -154,7 +142,3 @@
     transform: rotate(-50deg);
     z-index: 3;
 }
-
-//     .mainLogo {
-//     transform: scale(200%);
-// }
