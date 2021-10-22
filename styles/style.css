@@ -274,6 +274,14 @@ a {
   color: lightseagreen;
 }
 
+a:hover,
+a:focus,
+.projectSection a:focus,
+.projectSection a:hover {
+  color: gold;
+  border-bottom: 3px solid gold;
+}
+
 .wrapper {
   width: 80%;
   max-width: 1200px;
@@ -406,7 +414,7 @@ header nav {
   text-align: right;
 }
 .headerCopy p {
-  margin-right: 0.65rem;
+  margin-right: 0.6rem;
 }
 
 h1 {
@@ -673,8 +681,11 @@ h1 {
 .aboutCopy a {
   position: absolute;
   bottom: 0;
-  right: 6rem;
+  right: 3rem;
   border-bottom: 3px solid lightseagreen;
+}
+.aboutCopy a:nth-of-type(2) {
+  right: 12rem;
 }
 .aboutCopy :first-child {
   font-size: 1.5rem;
@@ -720,7 +731,7 @@ h1 {
   position: absolute;
   right: 0;
   top: 7.5%;
-  height: 85%;
+  height: 82.5%;
   width: 55%;
   border: 0.25rem dotted rgba(102, 51, 153, 0.055);
   z-index: -2;
@@ -815,7 +826,7 @@ h1 {
   top: 7.5%;
 }
 
-.proj1 .projectLinks a {
+.proj1 a {
   color: #857EA9;
   border-bottom: 3px solid #857EA9;
 }
@@ -823,7 +834,7 @@ h1 {
   border: 0.25rem dotted #ecdcc3a9;
 }
 
-.proj2 .projectLinks a {
+.proj2 a {
   color: #4d203cbc;
   border-bottom: 3px solid #4d203cbc;
 }
@@ -831,7 +842,7 @@ h1 {
   border: 0.25rem dotted #3b2a3d4f;
 }
 
-.proj3 .projectLinks a {
+.proj3 a {
   color: #737593;
   border-bottom: 3px solid #737593;
 }
@@ -839,7 +850,7 @@ h1 {
   border: 0.25rem dotted #CBCCE9;
 }
 
-.proj4 .projectLinks a {
+.proj4 a {
   color: #DD862C;
   border-bottom: 3px solid #DD862C;
 }
@@ -849,10 +860,14 @@ h1 {
 
 .contactSection {
   min-height: 0vh;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 .contactSection .sectionHeading p {
   margin-left: 6rem;
+}
+.contactSection a:hover,
+.contactSection a:focus {
+  border: none;
 }
 
 .contactCopy {
@@ -891,6 +906,18 @@ h1 {
 }
 .contactNav i {
   font-size: 2rem;
+}
+
+.resumeContainer h3 {
+  margin: 1rem;
+  position: relative;
+}
+.resumeContainer a {
+  display: block;
+  border: 3px solid white;
+}
+.resumeContainer a.resumeLink:hover, .resumeContainer a.resumeLink:focus .resume {
+  border: 3px solid gold;
 }
 
 @media (max-height: 800px) and (min-width: 900px) {
@@ -996,6 +1023,9 @@ section p,
   .aboutSection .aboutImg img, .aboutSection .aboutImg .overlay {
     display: none;
   }
+  .aboutSection .dashAccent2 {
+    display: none;
+  }
 
   .projectSection .allProjects article:last-of-type {
     margin-bottom: 0;
@@ -1028,6 +1058,9 @@ section p,
   }
   .projectSection .projectCopy, .projectSection .projectImg {
     width: 100%;
+  }
+  .projectSection .projectContainer:first-of-type {
+    margin-top: 0rem;
   }
   .projectSection .projectContainer .projectCopy {
     text-align: left;

@@ -38,9 +38,10 @@
 
     // GENERAL STYLES
 
-    section {
-        margin: 0;
-    }
+        section {
+            margin: 0;
+        }
+
 
 
     h1, h2 {
@@ -108,7 +109,10 @@
             img, .overlay {
                 display: none;
             }
-            // overflow: hidden;
+        }
+
+        .dashAccent2 {
+            display: none;
         }
     }
 
@@ -144,6 +148,10 @@
 
         .projectCopy, .projectImg {
             width: 100%;
+        }
+
+        .projectContainer:first-of-type {
+            margin-top: 0rem;
         }
 
         .projectContainer {

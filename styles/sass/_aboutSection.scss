@@ -34,9 +34,12 @@
     a {
         position: absolute;
         bottom: 0;
-        right: 6rem;
+        right: 3rem;
         border-bottom: 3px solid lightseagreen;
-        // border-bottom: 3px solid #66cdaa;
+    }
+
+    a:nth-of-type(2) {
+        right: 12rem;
     }
     :first-child {
         font-size: 1.5rem;
@@ -76,14 +79,13 @@
     border-radius: 50%;
     border: 0.25rem dotted rgba(102, 51, 153, 0.397);
     z-index: -1;
-    // padding: 45% 0;
 }
 
 .dashAccent2 {
     position: absolute;
     right: 0;
     top: 7.5%;
-    height: 85%;
+    height: 82.5%;
     width: 55%;
     border: 0.25rem dotted rgba(102, 51, 153, 0.055);
     z-index: -2;

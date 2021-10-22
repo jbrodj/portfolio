@@ -1,9 +1,13 @@
 .contactSection {
     min-height: 0vh;
     // max-height: 300px;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     .sectionHeading p {
         margin-left: 6rem;
+    }
+    a:hover, 
+    a:focus {
+        border: none;
     }
 }
 
@@ -23,6 +27,7 @@
         padding: 0.25rem;
         text-transform: none;
         letter-spacing: 0.05rem;
+    
     }
     p {
         font-weight: 700;
@@ -39,3 +44,18 @@
         font-size: 2rem;
     }
 }
+
+    .resumeContainer {
+        h3 {
+            margin: 1rem;
+            position: relative;
+        }
+        
+        a{
+            display: block;
+            border: 3px solid white;
+        }
+        a.resumeLink:hover, a.resumeLink:focus .resume {
+            border: 3px solid gold;
+        }
+    }
