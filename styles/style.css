@@ -280,6 +280,10 @@ a {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h2, h3, p {
   color: #222;
 }
@@ -359,7 +363,7 @@ i {
 
 header {
   height: 100vh;
-  min-height: 800px;
+  min-height: 600px;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,11 +399,10 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   max-height: 600px;
-  position: relative;
+  width: 100%;
 }
 
 .headerCopy {
-  margin: 0 auto;
   text-align: right;
 }
 .headerCopy p {
@@ -424,7 +427,7 @@ h1 {
   margin: 1rem 0 1rem 0;
 }
 .arrowBuddies div {
-  margin: 0.5rem 0;
+  margin: 0.5rem;
 }
 
 .arrowLink {
@@ -444,6 +447,11 @@ h1 {
   border-right: 0.5rem dotted #f8f6e9;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .triangleUp {
@@ -885,6 +893,44 @@ h1 {
   font-size: 2rem;
 }
 
+@media (max-height: 800px) {
+  header {
+    height: auto;
+    height: 100vh;
+  }
+  header .headerWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .arrowBuddies {
+    margin: 1rem auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+  }
+
+  .mainLogo {
+    -webkit-transform: scale(60%);
+            transform: scale(60%);
+    margin: -4rem 0;
+  }
+}
 @media (max-width: 900px) {
   section {
     margin: 0;
@@ -909,6 +955,11 @@ section p,
   .sectionHeading p span {
     padding: 0.12rem;
     height: 1.5rem;
+  }
+
+  .mainLogo {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
   }
 
   .aboutSection .sectionHeading p {

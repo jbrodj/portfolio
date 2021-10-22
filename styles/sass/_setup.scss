@@ -56,6 +56,10 @@ a {
 
 // GENERAL STYLES 
 
+html {
+    scroll-behavior: smooth;
+}
+
 h2, h3, p {
     color: #222;
 }

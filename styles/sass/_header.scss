@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    min-height: 800px;
+    min-height: 600px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,11 +20,12 @@ header {
     justify-content: space-around;
     align-items: center;
     max-height: 600px;
-    position: relative;
+    width: 100%;
+    // position: relative;
 }
 
 .headerCopy {
-    margin: 0 auto;
+    // margin: 0 auto;
     text-align: right;
 
     p {
@@ -43,7 +44,7 @@ h1 {
     margin: 1rem 0 1rem 0;
 
     div {
-        margin: 0.5rem 0;
+        margin: 0.5rem;
     }
 }
 
@@ -63,6 +64,11 @@ h1 {
     border-bottom: 0.5rem dotted $neutralColor;
     border-right: 0.5rem dotted $neutralColor;
     transform: rotate(45deg);
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     
 }
 
