@@ -1,4 +1,4 @@
-@media (max-height: 800px) {
+@media (max-height: 800px) and (min-width: 900px) {
     header {
         height: auto;
         height: 100vh;
@@ -238,10 +238,19 @@
 
     .mainLogo {
         transform: scale(80%);
+        margin: -1rem 0;
     }
 
     .arrowBuddies {
-        margin-bottom: 0;
+        margin: 0 0 -0.5rem 0;
+    }
+
+    .arrowLink {
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: -0.5rem;
     }
     
     // ABOUT SECTION STYLES
