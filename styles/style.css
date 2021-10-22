@@ -239,6 +239,10 @@ html {
   font-size: 20px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1, h2, h3, p, a, ul, li {
   margin: 0;
   padding: 0;
@@ -298,7 +302,7 @@ h2, h3, p {
 }
 
 section {
-  margin: 8rem auto;
+  margin: 10rem auto;
   min-height: calc(100vh - 16rem);
 }
 
@@ -317,7 +321,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6rem 1rem;
+  padding: 3rem 1rem;
 }
 .sectionHeading p {
   margin-left: 4.75rem;
@@ -466,6 +470,18 @@ h1 {
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+.headerSlash {
+  position: absolute;
+  width: 200%;
+  height: 25rem;
+  background-color: #66cdaa;
+  z-index: -2;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  right: -10rem;
+  bottom: -5rem;
 }
 
 .triangleUp {
@@ -637,7 +653,6 @@ h1 {
 }
 
 .aboutSection {
-  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,12 +737,12 @@ h1 {
 
 .dashAccent {
   position: absolute;
-  bottom: -8rem;
-  right: 5rem;
+  bottom: -7rem;
+  right: 6rem;
   height: 40vw;
-  max-height: 30rem;
+  max-height: 29rem;
   width: 40vw;
-  max-width: 30rem;
+  max-width: 29rem;
   border-radius: 50%;
   border: 0.25rem dotted rgba(102, 51, 153, 0.397);
   z-index: -1;
@@ -743,6 +758,12 @@ h1 {
   z-index: -2;
 }
 
+.projectSection {
+  background-color: #f0f6f6;
+  position: relative;
+  z-index: -2;
+  padding-bottom: 2rem;
+}
 .projectSection .sectionHeading p {
   margin-left: 6rem;
 }
@@ -864,8 +885,42 @@ h1 {
   border: 0.25rem dotted #dd872c4f;
 }
 
+.topSlash, .bottomSlash {
+  position: absolute;
+  width: 200%;
+  height: 25rem;
+  background-color: #f0f6f6;
+  z-index: -2;
+}
+
+.topSlash {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  right: -10rem;
+  top: -1rem;
+}
+
+.bottomSlash {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  left: -10rem;
+  bottom: -5rem;
+}
+
 .contactSection {
-  min-height: 0vh;
+  height: calc(100vh - 10rem);
+  max-height: 1000px;
+  min-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 3rem;
 }
 .contactSection .sectionHeading p {
@@ -921,6 +976,8 @@ h1 {
 .resumeContainer a {
   display: block;
   border: 3px solid white;
+  width: 12rem;
+  margin: 0 auto;
 }
 .resumeContainer a.resumeLink:hover, .resumeContainer a.resumeLink:focus .resume {
   border: 3px solid gold;
@@ -966,7 +1023,9 @@ h1 {
 }
 @media (max-width: 900px) {
   section {
-    margin: 0;
+    margin: 6rem;
+    width: 100%;
+    margin: 7rem auto;
   }
 
   h1, h2 {
@@ -980,7 +1039,7 @@ section p,
   }
 
   .sectionHeading {
-    padding: 5rem 1rem 2.5rem 1rem;
+    padding: 2rem 1rem 2.5rem 1rem;
   }
   .sectionHeading p {
     font-size: 0.75rem;
@@ -995,6 +1054,9 @@ section p,
             transform: scale(100%);
   }
 
+  .aboutSection {
+    min-height: calc(100vh - 16rem);
+  }
   .aboutSection .sectionHeading p {
     margin-left: 3.3rem;
   }
@@ -1033,6 +1095,9 @@ section p,
     display: none;
   }
 
+  .projectSection {
+    padding-bottom: 0;
+  }
   .projectSection .allProjects article:last-of-type {
     margin-bottom: 0;
   }

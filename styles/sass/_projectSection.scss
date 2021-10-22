@@ -1,4 +1,9 @@
 .projectSection {
+    background-color: $angleBackground;
+    position: relative;
+    z-index: -2;
+    padding-bottom: 2rem;
+
     .sectionHeading p {
         margin-left: 6rem;
     }
@@ -111,7 +116,6 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    // border: 0.25rem solid rgba(32, 178, 171, 0.164);
     z-index: -1;
 }
 
@@ -163,4 +167,25 @@
     .projectImg > div {
         border: 0.25rem dotted #dd872c4f;
     }
+}
+
+
+.topSlash, .bottomSlash {
+    position: absolute;
+    width: 200%;
+    height: 25rem;
+    background-color: $angleBackground;
+    z-index: -2;
+}
+
+.topSlash {
+    transform: rotate(-2deg);
+    right: -10rem;
+    top: -1rem;
+}
+
+.bottomSlash {
+    transform: rotate(2deg);
+    left: -10rem;
+    bottom: -5rem;
 }

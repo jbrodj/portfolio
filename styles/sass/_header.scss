@@ -78,8 +78,15 @@ h1 {
     
 }
 
-// .downArrow:hover,
-// .downArrow:focus {
-//     border-bottom: 6px dotted $lightColor;
-//     border-right: 6px dotted $lightColor;
-// }
+.headerSlash {
+    position: absolute;
+    width: 200%;
+    height: 25rem;
+    background-color: $primaryColor;
+    z-index: -2;    
+    transform: rotate(2deg);
+    right: -10rem;
+    bottom: -5rem;
+}
+
+

@@ -1,6 +1,10 @@
 .contactSection {
-    min-height: 0vh;
-    // max-height: 300px;
+    height: calc(100vh - 10rem);
+    max-height: 1000px;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 3rem;
     .sectionHeading p {
         margin-left: 6rem;
@@ -54,6 +58,8 @@
         a{
             display: block;
             border: 3px solid white;
+            width: 12rem;
+            margin: 0 auto;
         }
         a.resumeLink:hover, a.resumeLink:focus .resume {
             border: 3px solid gold;

@@ -39,7 +39,9 @@
     // GENERAL STYLES
 
         section {
-            margin: 0;
+            margin: 6rem;
+            width: 100%;
+            margin: 7rem auto;
         }
 
 
@@ -55,7 +57,7 @@
     }
 
     .sectionHeading {
-        padding: 5rem 1rem 2.5rem 1rem;
+        padding: 2rem 1rem 2.5rem 1rem;
         
         p {
         font-size: 0.75rem;
@@ -77,6 +79,7 @@
 // ABOUT SECTION STYLES
 
     .aboutSection {
+        min-height: calc(100vh - 16rem);
         .sectionHeading p {
             margin-left: 3.3rem;
         }
@@ -120,6 +123,7 @@
 // PROJECT SECTION STYLES
 
     .projectSection {
+        padding-bottom: 0;
 
         .allProjects article:last-of-type {
             margin-bottom: 0;
