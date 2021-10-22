@@ -1,5 +1,4 @@
 .aboutSection {
-    margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,12 +67,12 @@
 
 .dashAccent {
     position: absolute;
-    bottom: -8rem;
-    right: 5rem;
+    bottom: -7rem;
+    right: 6rem;
     height: 40vw;
-    max-height: 30rem;
+    max-height: 29rem;
     width: 40vw;
-    max-width: 30rem;
+    max-width: 29rem;
     border-radius: 50%;
     border: 0.25rem dotted rgba(102, 51, 153, 0.397);
     z-index: -1;

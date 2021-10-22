@@ -1,3 +1,5 @@
+//===Adjust for wide screens with low height===
+
 @media (max-height: 800px) and (min-width: 900px) {
     header {
         height: auto;
@@ -5,7 +7,6 @@
 
         .headerWrapper {
             display: flex;
-            // flex-direction: row-reverse;
             justify-content: space-between;
         }
     }
@@ -25,11 +26,7 @@
             transform: scale(60%);
             margin: -4rem 0;
         }
-
-    
 }
-
-
 
 
 // === MID-SIZE STYLES ===
@@ -39,10 +36,10 @@
     // GENERAL STYLES
 
         section {
-            margin: 0;
+            margin: 6rem;
+            width: 100%;
+            margin: 7rem auto;
         }
-
-
 
     h1, h2 {
         font-size: 2.5rem;
@@ -55,11 +52,9 @@
     }
 
     .sectionHeading {
-        padding: 5rem 1rem 2.5rem 1rem;
-        
+        padding: 2rem 1rem 2.5rem 1rem;
         p {
         font-size: 0.75rem;
-
             span {
                 padding: 0.12rem;
                 height: 1.5rem;
@@ -77,6 +72,7 @@
 // ABOUT SECTION STYLES
 
     .aboutSection {
+        min-height: calc(100vh - 16rem);
         .sectionHeading p {
             margin-left: 3.3rem;
         }
@@ -105,12 +101,10 @@
                 top: -2.5rem;
                 left: -3.25rem;
             }
-
             img, .overlay {
                 display: none;
             }
         }
-
         .dashAccent2 {
             display: none;
         }
@@ -120,23 +114,20 @@
 // PROJECT SECTION STYLES
 
     .projectSection {
-
+        padding-bottom: 0;
         .allProjects article:last-of-type {
             margin-bottom: 0;
         }
         .projectContainer {
             flex-direction: column-reverse;
-            margin: 6rem 0;
-            
+            margin: 6rem 0;    
             .projectCopy {
                 padding: 0;
                 margin-top: 3rem;
-
                 div {
                     order: -1;
                     margin-top: 1rem;
                 }
-
                 h3 {
                     order: -2;
                 }
@@ -172,10 +163,8 @@
                 width: 85%;
                 transform: rotate(5deg);
             }
-
             .leftAccent {
                 transform: rotate(-5deg);
-
             }
         }
     }
@@ -195,7 +184,6 @@
         width: 60%;
         a {
             margin: 0.5rem;
-
         }
         i {
             font-size: 1.5rem;
@@ -208,11 +196,7 @@
     footer {
         height: 4rem;
     }
-
 }
-
-
-
 
 
 
@@ -302,13 +286,10 @@
 
     // PROJECT SECTION STYLES 
     
-    .projectSection {
-        
+    .projectSection {  
         .allProjects article:last-of-type {
             margin-bottom: 0;
         }
-        
-        
         .projectCopy {
             margin-top: 1.75rem;
         }
@@ -316,7 +297,6 @@
     
     .projectContainer {
         margin-bottom: 4rem;
-        
         .projectCopy {
             padding: 0;
         }
