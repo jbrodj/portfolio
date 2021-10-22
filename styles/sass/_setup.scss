@@ -45,15 +45,20 @@ a {
     font-weight: 700;
     font-size: 100%;
     color: lightseagreen;
+    // color: #66cdaa;
 }
 
 .wrapper {
-    width: 70%;
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 // GENERAL STYLES 
+
+h2, h3, p {
+    color: #222;
+}
 
 section {
     margin: 8rem auto;

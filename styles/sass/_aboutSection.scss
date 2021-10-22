@@ -8,10 +8,11 @@
 
 .aboutContent {
     display: flex;
+    position: relative;
 }
 
 
-.aboutCopy, .aboutImg {
+.aboutImg {
     width: 50%;
 }
 
@@ -21,8 +22,8 @@
     justify-content: space-around;
     position: relative;
     margin-left: -4rem;
-    padding: 3rem 0;
-    width: 55%;
+    padding: 3rem 0.75rem 3rem 0;
+    // width: 55%;
     width: calc(50% + 4rem);
     z-index: 1;
     p {
@@ -35,11 +36,13 @@
         bottom: 0;
         right: 6rem;
         border-bottom: 3px solid lightseagreen;
+        // border-bottom: 3px solid #66cdaa;
     }
     :first-child {
         font-size: 1.5rem;
         font-weight: 700;
         color: lightseagreen;
+        // color: #66cdaa;
         width: 100%;
     }
 }
@@ -51,7 +54,7 @@
         height: 100%;
         object-fit: cover;
         border-radius: 0.25rem;
-
+        z-index: 1;
     }
 }
 
@@ -64,11 +67,24 @@
 
 .dashAccent {
     position: absolute;
-    top: 2rem;
-    left: -6rem;
-    height: 29rem;
-    width: 29rem;
+    bottom: -8rem;
+    right: 5rem;
+    height: 40vw;
+    max-height: 30rem;
+    width: 40vw;
+    max-width: 30rem;
     border-radius: 50%;
-    border: 0.25rem dotted rgba(102, 51, 153, 0.493);
+    border: 0.25rem dotted rgba(102, 51, 153, 0.397);
     z-index: -1;
+    // padding: 45% 0;
+}
+
+.dashAccent2 {
+    position: absolute;
+    right: 0;
+    top: 7.5%;
+    height: 85%;
+    width: 55%;
+    border: 0.25rem dotted rgba(102, 51, 153, 0.055);
+    z-index: -2;
 }

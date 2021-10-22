@@ -25,6 +25,12 @@
         position: relative;
         width: 52.5%;
 
+        img {
+            min-height: 280px;
+            object-fit: cover;
+
+        }
+
     }
 
     p {

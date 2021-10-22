@@ -6,7 +6,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: mediumaquamarine;
+    background-color: $primaryColor;
     position: relative;
     padding: 6rem 0;
     nav {
@@ -26,6 +26,10 @@ header {
 .headerCopy {
     margin: 0 auto;
     text-align: right;
+
+    p {
+        margin-right: 0.65rem;
+    }
 }
 
 h1 {
@@ -36,9 +40,34 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 1rem 0;
 
     div {
         margin: 0.5rem 0;
     }
 }
+
+.arrowLink {
+    margin-top: 1rem;
+}
+
+.arrowLink:hover .downArrow,
+.arrowLink:focus-within .downArrow {
+    border-bottom: 0.5rem dotted $lightColor;
+    border-right: 0.5rem dotted $lightColor;
+}
+
+.downArrow {
+    height: 3rem;
+    width: 3rem;
+    border-bottom: 0.5rem dotted $neutralColor;
+    border-right: 0.5rem dotted $neutralColor;
+    transform: rotate(45deg);
+    
+}
+
+// .downArrow:hover,
+// .downArrow:focus {
+//     border-bottom: 6px dotted $lightColor;
+//     border-right: 6px dotted $lightColor;
+// }

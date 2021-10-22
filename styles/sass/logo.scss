@@ -1,53 +1,35 @@
-.arrow-up {
-    // margin-top: 0.5rem;
-  width: 0; 
-  height: 0; 
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid rgb(146, 115, 167);
+.triangleUp {
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #1f9fc2;
 }
 
-.arrow-down {
-  width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid rgb(255, 84, 54);
+.triangleDown {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f0744f;
 }
 
-// .arrow-right {
-//   width: 0; 
-//   height: 0; 
-//   border-top: 250px solid transparent;
-//   border-bottom: 250px solid transparent;
-//   transform: rotate(20deg);
-  
-//   border-left: 450px solid #F6F2D8;
-//   position: absolute;
-//   bottom: 0;
-//   left: 42%;
-// }
-
-.arrow-left {
-  width: 0; 
-  height: 0; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  border-right:10px solid gold; 
+.triangleLeft {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid gold; 
 }
-
-
-
-
 
 .mainLogo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    min-height: 350px;
     width: 350px;
     border-radius: 50%;
-    background-color: #F6F2D8;
+    background-color: $neutralColor;
     padding: 0 0 0.25rem 0;
 }
 
@@ -56,14 +38,16 @@
     width: 300px;
     border-radius: 50%;
     // border: 5px solid #F6F2D8;
-    background-color: #F6F2D8;
-    background-color: rgba(255, 255, 255, 0);
+    // background-color: #F6F2D8;
+    // background-color: rgba(255, 255, 255, 0);
     position: relative;
 }
 
 .headRear {
-    background-color: lightseagreen;
+    // background-color: lightseagreen;
+    // background-color: $darkColor;
     background-color: rgb(187, 240, 237);
+    background-color: $lightColor;
     height: 50%;
     width: 50%;
     border-radius: 100% 100% 100% 0;
@@ -75,11 +59,13 @@
 
 .headFront {
     background-color: rgb(187, 240, 237);
+    background-color: $lightColor;
     height: 50%;
     width: 50%;
     border-radius: 100%;
     /* border bottom needs to be ~ 0.75% of container height */
     border-bottom: 2px solid lightseagreen;
+    border-bottom: 2px solid $darkColor;
     position: absolute;
     top: 2.5%;
     left: 25%;
@@ -88,6 +74,7 @@
 }
 .bodyBox {
     background-color: rgb(187, 240, 237);
+    background-color: $lightColor;
     height: 60%;
     width: 57.5%;
     border-radius: 0 100% 100% 0;
@@ -96,11 +83,13 @@
     left: 25%;
     /* border top needs to be 15% of container height */
     border-top: 42.5px solid gold;
+    border-top: 42.5px solid $beakAccentColor;
 }
 
 .outerEye {
     background-color: white;
     background-color: lightseagreen;
+    background-color: $darkColor;
     height: 20%;
     width: 20%;
     border-radius: 100%;
@@ -112,10 +101,12 @@
 .eyelid {
     background-color: white;
     background-color: lightseagreen;
+    background-color: $darkColor;
     height: 15%;
     width: 20%;
     border-radius: 100%;
     border-bottom: 3px solid rgb(187, 240, 237);
+    border-bottom: 3px solid $lightColor;
     position: absolute;
     transform: rotate(20deg);
     top: 20%;
@@ -125,7 +116,7 @@
 .beakSeam {
     height: 3%;
     width: 15%;
-    background-color: gold;
+    background-color: $beakAccentColor;
     /* border top needs to be ~0.75% of container height */
     border-top: 3px solid white;
     position: absolute;
@@ -138,6 +129,7 @@
 .wingCircle {
     background-color: white;
     background-color: lightseagreen;
+    background-color: $darkColor;
     height: 20%;
     width: 20%;
     border-radius: 100%;
@@ -154,6 +146,7 @@
     box-shadow: 6.25% 3.75% 0 0 white;
     /* Pixel values for box shadow need to be 6.25% and 3.75% of the container height */
     box-shadow: 20px 12.5px 0 0 lightseagreen;
+    box-shadow: 20px 12.5px 0 0 $darkColor;
     
     position: absolute;
     top: 65%;
@@ -161,3 +154,7 @@
     transform: rotate(-50deg);
     z-index: 3;
 }
+
+//     .mainLogo {
+//     transform: scale(200%);
+// }
