@@ -50,7 +50,8 @@ a {
 
         a:hover,
         a:focus, 
-        .projectSection a:focus,
+        .aboutSection a:hover,
+        section .projectSection a:focus,
         .projectSection a:hover {
             color: gold;
             border-bottom: 3px solid gold;

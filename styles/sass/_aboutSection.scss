@@ -23,7 +23,6 @@
     position: relative;
     margin-left: -4rem;
     padding: 3rem 0.75rem 3rem 0;
-    // width: 55%;
     width: calc(50% + 4rem);
     z-index: 1;
     p {
@@ -31,21 +30,20 @@
         width: 75%;
     }
 
-    a {
+    .sectionLink {
         position: absolute;
         bottom: 0;
         right: 3rem;
         border-bottom: 3px solid lightseagreen;
     }
 
-    a:nth-of-type(2) {
+    .sectionLink:nth-of-type(2) {
         right: 12rem;
     }
     :first-child {
         font-size: 1.5rem;
         font-weight: 700;
         color: lightseagreen;
-        // color: #66cdaa;
         width: 100%;
     }
 }
