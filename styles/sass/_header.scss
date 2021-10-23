@@ -74,6 +74,7 @@ h1 {
 
 .headerSlash {
     position: absolute;
+    overflow: hidden;
     width: 200%;
     height: 25rem;
     background-color: $primaryColor;
