@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    min-height: 600px;
+    min-height: 660px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@ header {
     background-color: $primaryColor;
     position: relative;
     padding: 6rem 0;
+    overflow: hidden;
     nav {
     position: absolute;
     }
@@ -74,7 +75,6 @@ h1 {
 
 .headerSlash {
     position: absolute;
-    overflow: hidden;
     width: 200%;
     height: 25rem;
     background-color: $primaryColor;

@@ -239,10 +239,6 @@ html {
   font-size: 20px;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 h1, h2, h3, p, a, ul, li {
   margin: 0;
   padding: 0;
@@ -376,7 +372,7 @@ i {
 
 header {
   height: 100vh;
-  min-height: 600px;
+  min-height: 660px;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,6 +389,7 @@ header {
   background-color: #66cdaa;
   position: relative;
   padding: 6rem 0;
+  overflow: hidden;
 }
 header nav {
   position: absolute;
@@ -750,6 +747,7 @@ h1 {
   position: relative;
   z-index: 1;
   padding-bottom: 2rem;
+  overflow: hidden;
 }
 .projectSection .sectionHeading p {
   margin-left: 6rem;
@@ -1038,6 +1036,10 @@ section p,
     height: 1.5rem;
   }
 
+  header {
+    min-height: 730px;
+  }
+
   .mainLogo {
     -webkit-transform: scale(100%);
             transform: scale(100%);
@@ -1173,7 +1175,7 @@ section p,
     padding: 4rem 0 2rem 0;
     padding: 0;
     height: 100vh;
-    min-height: 0;
+    min-height: 610px;
   }
 
   .headerWrapper {
