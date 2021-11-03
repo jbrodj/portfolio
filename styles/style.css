@@ -636,6 +636,16 @@ h1 {
   z-index: 3;
 }
 
+.logoLink:hover,
+.logoLink:focus {
+  border: none;
+  outline: 6px dotted gold;
+}
+
+.logoLink {
+  border-radius: 50%;
+}
+
 .aboutSection {
   display: -webkit-box;
   display: -ms-flexbox;

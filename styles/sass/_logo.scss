@@ -142,3 +142,13 @@
     transform: rotate(-50deg);
     z-index: 3;
 }
+
+        .logoLink:hover,
+        .logoLink:focus {
+            border: none;
+            outline: 6px dotted gold;
+        }
+
+        .logoLink {
+            border-radius: 50%;
+        }
