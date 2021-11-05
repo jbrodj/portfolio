@@ -146,9 +146,12 @@
         .logoLink:hover,
         .logoLink:focus {
             border: none;
-            outline: 6px dotted gold;
+            outline: 6px dotted rgba(255, 217, 0, 0.39);
+            transform: rotate(-0.1deg);
         }
 
         .logoLink {
             border-radius: 50%;
+            transition: .5s;
+            transition-timing-function: cubic-bezier(0.4, 0.78, 0, 40);
         }
