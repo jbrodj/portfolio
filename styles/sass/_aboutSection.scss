@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .aboutContent {
@@ -29,13 +30,7 @@
         width: 75%;
     }
 
-    .sectionLink {
-        position: absolute;
-        bottom: 0;
-        right: 0.95rem;
-        border-bottom: 3px solid lightseagreen;
-    }
-
+    
     .sectionLink:nth-of-type(2) {
         right: 9.7rem;
     }
@@ -45,6 +40,13 @@
         color: lightseagreen;
         width: 100%;
     }
+}
+
+.sectionLink {
+    position: absolute;
+    bottom: 0;
+    right: 0.95rem;
+    border-bottom: 3px solid lightseagreen;
 }
 
 .aboutImg {
@@ -86,4 +88,34 @@
     width: 55%;
     border: 0.25rem dotted rgba(102, 51, 153, 0.055);
     z-index: -2;
+}
+
+.aboutSection::before {
+    content: '';
+    position: absolute;
+    transform: scaleX(-1) ;
+    top: -10rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 0;
+    border-style: solid;
+    border-width: 4rem 0 4rem 100vw;
+    border-color: $primaryColor transparent transparent $primaryColor;
+    // z-index: 3;
+}
+
+.aboutSection::after {
+    content: '';
+    position: absolute;
+    transform: scaleY(-1) scaleX(-1);
+    bottom: -14rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 0;
+    border-style: solid;
+    border-width: 4rem 0 4rem 100vw;
+    border-color: $angleBackground transparent transparent $angleBackground;
+    z-index: -3;
 }

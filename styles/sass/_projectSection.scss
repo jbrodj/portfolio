@@ -2,7 +2,7 @@
     background-color: $angleBackground;
     position: relative;
     z-index: 1;
-    padding-bottom: 2rem;
+    padding: 1.75rem 0;
     overflow: hidden;
 
     .sectionHeading p {
@@ -47,28 +47,11 @@
     a:last-of-type {
         margin-left: 0.75rem;
     }
-
-    // i {
-    //     font-size: 1.75rem;
-    //     font-size: calc(0.1rem + 2vw);
-    //     margin: 0.5rem;
-    //     color: #fff;
-    // }
-
 }
 
 .projectLinks {
     text-align: left;
 }
-
-// .toolsUsed {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     margin: 0 0 0 -27.5%;
-//     background-color: rgba(0, 0, 0, 0.116);
-//     z-index: 1;
-// }
 
 .projectContainer:nth-of-type(2n) {
     flex-direction: row-reverse;
@@ -85,27 +68,7 @@
     a {
         align-self: flex-end;
     }
-
-    // I might still use this in a future revision.
-
-    // .toolsUsed {
-    //     margin: 0 -27.5% 0 0;
-    //     justify-content: center;
-    // }
 }
-
-// .projectImg, .projectCopy {
-//     width: 50%;
-// }
-
-// .paired :first-child {
-//     font-size: 1.5rem;
-//     font-size: calc(0.05rem + 1.8vw);
-// }
-
-// .leftOverlay {
-//     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
-// }
 
 .projectImg > div {
     height: 100%;
@@ -162,25 +125,4 @@
     .projectImg > div {
         border: 0.25rem dotted #dd872c4f;
     }
-}
-
-
-.topSlash, .bottomSlash {
-    position: absolute;
-    width: 200%;
-    height: 25rem;
-    background-color: $angleBackground;
-    z-index: -2;
-}
-
-.topSlash {
-    transform: rotate(-2deg);
-    right: -10rem;
-    top: -1rem;
-}
-
-.bottomSlash {
-    transform: rotate(2deg);
-    left: -10rem;
-    bottom: -5rem;
 }

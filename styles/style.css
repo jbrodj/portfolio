@@ -239,6 +239,10 @@ html {
   font-size: 20px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1, h2, h3, p, a, ul, li {
   margin: 0;
   padding: 0;
@@ -277,6 +281,7 @@ a {
 a:hover,
 a:focus,
 .aboutSection a:hover,
+.projectSection a:focus,
 section .projectSection a:focus,
 .projectSection a:hover {
   color: gold;
@@ -357,6 +362,11 @@ footer {
   height: 6rem;
   text-align: center;
   background-color: #f0f6f6;
+}
+
+.resumeLink, .downArrow {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 html {
@@ -461,8 +471,8 @@ h1 {
 
 .arrowLink:hover .downArrow,
 .arrowLink:focus-within .downArrow {
-  border-bottom: 0.5rem dotted #A6ECFF;
-  border-right: 0.5rem dotted #A6ECFF;
+  border-bottom: 0.5rem dotted gold;
+  border-right: 0.5rem dotted gold;
 }
 
 .downArrow {
@@ -477,18 +487,7 @@ h1 {
   left: 0;
   right: 0;
   margin: 0 auto;
-}
-
-.headerSlash {
-  position: absolute;
-  width: 200%;
-  height: 25rem;
-  background-color: #66cdaa;
-  z-index: -2;
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
-  right: -10rem;
-  bottom: -5rem;
+  z-index: 2;
 }
 
 .triangleUp {
@@ -646,16 +645,23 @@ h1 {
   z-index: 3;
 }
 
+.logoLink {
+  border-radius: 50%;
+}
+
 .logoLink:hover,
 .logoLink:focus {
   border: none;
-  outline: 6px dotted rgba(255, 217, 0, 0.39);
 }
 
-.logoLink {
-  border-radius: 50%;
-  -webkit-transition: outline 0.2s;
-  transition: outline 0.2s;
+.logoLink:hover .mainLogo,
+.logoLink:focus .mainLogo {
+  background-color: #70B8CC;
+}
+
+.mainLogo {
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
 }
 
 .aboutSection {
@@ -672,6 +678,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .aboutContent {
@@ -705,12 +712,6 @@ h1 {
   margin: 1rem 0;
   width: 75%;
 }
-.aboutCopy .sectionLink {
-  position: absolute;
-  bottom: 0;
-  right: 0.95rem;
-  border-bottom: 3px solid lightseagreen;
-}
 .aboutCopy .sectionLink:nth-of-type(2) {
   right: 9.7rem;
 }
@@ -719,6 +720,13 @@ h1 {
   font-weight: 700;
   color: lightseagreen;
   width: 100%;
+}
+
+.sectionLink {
+  position: absolute;
+  bottom: 0;
+  right: 0.95rem;
+  border-bottom: 3px solid lightseagreen;
 }
 
 .aboutImg {
@@ -764,11 +772,42 @@ h1 {
   z-index: -2;
 }
 
+.aboutSection::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  top: -10rem;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 0;
+  border-style: solid;
+  border-width: 4rem 0 4rem 100vw;
+  border-color: #66cdaa transparent transparent #66cdaa;
+}
+
+.aboutSection::after {
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleY(-1) scaleX(-1);
+          transform: scaleY(-1) scaleX(-1);
+  bottom: -14rem;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 0;
+  border-style: solid;
+  border-width: 4rem 0 4rem 100vw;
+  border-color: #f0f6f6 transparent transparent #f0f6f6;
+  z-index: -3;
+}
+
 .projectSection {
   background-color: #f0f6f6;
   position: relative;
   z-index: 1;
-  padding-bottom: 2rem;
+  padding: 1.75rem 0;
   overflow: hidden;
 }
 .projectSection .sectionHeading p {
@@ -893,28 +932,6 @@ h1 {
   border: 0.25rem dotted #dd872c4f;
 }
 
-.topSlash, .bottomSlash {
-  position: absolute;
-  width: 200%;
-  height: 25rem;
-  background-color: #f0f6f6;
-  z-index: -2;
-}
-
-.topSlash {
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
-  right: -10rem;
-  top: -1rem;
-}
-
-.bottomSlash {
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
-  left: -10rem;
-  bottom: -5rem;
-}
-
 .contactSection {
   height: calc(100vh - 10rem);
   max-height: 1000px;
@@ -930,6 +947,7 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 3rem;
+  position: relative;
 }
 .contactSection .sectionHeading p {
   margin-left: 6rem;
@@ -990,6 +1008,20 @@ h1 {
 }
 .resumeContainer a.resumeLink:hover, .resumeContainer a.resumeLink:focus .resume {
   border: 3px solid gold;
+}
+
+.contactSection::before {
+  content: "";
+  position: absolute;
+  top: -13rem;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 0;
+  border-style: solid;
+  border-width: 4rem 0 4rem 100vw;
+  border-color: #f0f6f6 transparent transparent #f0f6f6;
+  z-index: -3;
 }
 
 @media (max-height: 800px) and (min-width: 900px) {
@@ -1110,9 +1142,13 @@ section p,
 
   .projectSection {
     padding-bottom: 0;
+    margin-top: 10rem;
   }
   .projectSection .allProjects article:last-of-type {
     margin-bottom: 0;
+  }
+  .projectSection .sectionHeading {
+    margin-bottom: 2.5rem;
   }
   .projectSection .projectContainer {
     -webkit-box-orient: vertical;
@@ -1168,6 +1204,10 @@ section p,
 
   .contactSection {
     margin-bottom: 2rem;
+  }
+
+  .contactSection::before {
+    top: -8rem;
   }
 
   .contactInfo p {
@@ -1229,6 +1269,14 @@ section p,
     bottom: -0.5rem;
   }
 
+  .aboutSection {
+    margin-bottom: 5rem;
+  }
+
+  .projectSection {
+    margin-top: 5rem;
+  }
+
   .aboutSection .aboutImg {
     width: 100%;
     height: 8rem;
@@ -1256,6 +1304,10 @@ section p,
   .aboutSection .sectionLink:nth-of-type(2) {
     margin: 1rem auto 0 auto;
     right: 0rem;
+  }
+
+  .aboutSection::after {
+    bottom: -9rem;
   }
 
   .projectSection .allProjects article:last-of-type {

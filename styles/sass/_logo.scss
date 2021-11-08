@@ -143,13 +143,21 @@
     z-index: 3;
 }
 
-        .logoLink:hover,
-        .logoLink:focus {
-            border: none;
-            outline: 6px dotted rgba(255, 217, 0, 0.39);
-        }
+    .logoLink {
+        border-radius: 50%;
+    }
 
-        .logoLink {
-            border-radius: 50%;
-            transition: outline .2s;
-        }
+    .logoLink:hover,
+    .logoLink:focus {
+        border: none;
+    }
+
+    .logoLink:hover .mainLogo,
+    .logoLink:focus .mainLogo {
+        background-color: $darkColor;
+    }
+
+    .mainLogo {
+        transition: background 0.2s;
+    }
+
