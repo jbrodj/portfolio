@@ -258,10 +258,18 @@
         right: 0;
         bottom: -0.5rem;
     }
+
+    .aboutSection {
+        margin-bottom: 5rem
+    }
+    
+    .projectSection {
+        margin-top: 5rem
+    }
     
     // ABOUT SECTION STYLES
     .aboutSection{
-        
+                
         .aboutImg {
         width: 100%;
         height: 8rem;
@@ -293,6 +301,10 @@
             margin: 1rem auto 0 auto;
             right: 0rem;
         }
+    }
+
+    .aboutSection::after {
+        bottom: -9rem;
     }
 
 
