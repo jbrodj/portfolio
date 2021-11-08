@@ -163,24 +163,3 @@
         border: 0.25rem dotted #dd872c4f;
     }
 }
-
-
-.topSlash, .bottomSlash {
-    position: absolute;
-    width: 200%;
-    height: 25rem;
-    background-color: $angleBackground;
-    z-index: -2;
-}
-
-.topSlash {
-    transform: rotate(-2deg);
-    right: -10rem;
-    top: -1rem;
-}
-
-.bottomSlash {
-    transform: rotate(2deg);
-    left: -10rem;
-    bottom: -5rem;
-}

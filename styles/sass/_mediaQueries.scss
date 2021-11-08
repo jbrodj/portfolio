@@ -119,8 +119,12 @@
 
     .projectSection {
         padding-bottom: 0;
+        margin-top: 10rem;
         .allProjects article:last-of-type {
             margin-bottom: 0;
+        }
+        .sectionHeading {
+            margin-bottom: 2.5rem;
         }
         .projectContainer {
             flex-direction: column-reverse;
@@ -178,6 +182,10 @@
 
     .contactSection {
         margin-bottom: 2rem;
+    }
+
+    .contactSection::before {
+        top: -8rem;
     }
 
     .contactInfo p {

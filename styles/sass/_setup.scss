@@ -12,9 +12,9 @@ html {
     font-size: 20px;
 }
 
-// body {
-//     // overflow-x: hidden;
-// }
+body {
+    overflow-x: hidden;
+}
 
 h1, h2, h3, p, a, ul, li {
     margin: 0;
@@ -119,4 +119,9 @@ footer {
     height: 6rem;
     text-align: center;
     background-color: rgb(240, 246, 246);
+}
+
+
+.resumeLink, .downArrow {
+    transition: 0.2s;
 }
