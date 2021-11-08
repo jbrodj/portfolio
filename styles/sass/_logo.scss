@@ -142,3 +142,14 @@
     transform: rotate(-50deg);
     z-index: 3;
 }
+
+        .logoLink:hover,
+        .logoLink:focus {
+            border: none;
+            outline: 6px dotted rgba(255, 217, 0, 0.39);
+        }
+
+        .logoLink {
+            border-radius: 50%;
+            transition: outline .2s;
+        }
