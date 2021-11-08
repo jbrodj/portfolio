@@ -281,6 +281,7 @@ a {
 a:hover,
 a:focus,
 .aboutSection a:hover,
+.projectSection a:focus,
 section .projectSection a:focus,
 .projectSection a:hover {
   color: gold;
@@ -711,12 +712,6 @@ h1 {
   margin: 1rem 0;
   width: 75%;
 }
-.aboutCopy .sectionLink {
-  position: absolute;
-  bottom: 0;
-  right: 0.95rem;
-  border-bottom: 3px solid lightseagreen;
-}
 .aboutCopy .sectionLink:nth-of-type(2) {
   right: 9.7rem;
 }
@@ -725,6 +720,13 @@ h1 {
   font-weight: 700;
   color: lightseagreen;
   width: 100%;
+}
+
+.sectionLink {
+  position: absolute;
+  bottom: 0;
+  right: 0.95rem;
+  border-bottom: 3px solid lightseagreen;
 }
 
 .aboutImg {
@@ -805,7 +807,7 @@ h1 {
   background-color: #f0f6f6;
   position: relative;
   z-index: 1;
-  padding-bottom: 2rem;
+  padding: 1.75rem 0;
   overflow: hidden;
 }
 .projectSection .sectionHeading p {

@@ -30,13 +30,7 @@
         width: 75%;
     }
 
-    .sectionLink {
-        position: absolute;
-        bottom: 0;
-        right: 0.95rem;
-        border-bottom: 3px solid lightseagreen;
-    }
-
+    
     .sectionLink:nth-of-type(2) {
         right: 9.7rem;
     }
@@ -46,6 +40,13 @@
         color: lightseagreen;
         width: 100%;
     }
+}
+
+.sectionLink {
+    position: absolute;
+    bottom: 0;
+    right: 0.95rem;
+    border-bottom: 3px solid lightseagreen;
 }
 
 .aboutImg {
