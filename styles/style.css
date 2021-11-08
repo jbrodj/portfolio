@@ -650,16 +650,12 @@ h1 {
 .logoLink:focus {
   border: none;
   outline: 6px dotted rgba(255, 217, 0, 0.39);
-  -webkit-transform: rotate(-0.1deg);
-          transform: rotate(-0.1deg);
 }
 
 .logoLink {
   border-radius: 50%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0.78, 0, 40);
-          transition-timing-function: cubic-bezier(0.4, 0.78, 0, 40);
+  -webkit-transition: outline 0.2s;
+  transition: outline 0.2s;
 }
 
 .aboutSection {
