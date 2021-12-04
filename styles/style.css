@@ -473,6 +473,16 @@ h1 {
 .arrowLink:focus-within .downArrow {
   border-bottom: 0.5rem dotted gold;
   border-right: 0.5rem dotted gold;
+  -webkit-animation: wiggle 0.5s ease 1;
+          animation: wiggle 0.5s ease 1;
+}
+
+.arrowLink:hover .homeArrow,
+.arrowLink:focus-within .homeArrow {
+  border-bottom: 0.5rem dotted gold;
+  border-right: 0.5rem dotted gold;
+  -webkit-animation: wiggleUp 0.5s ease 1;
+          animation: wiggleUp 0.5s ease 1;
 }
 
 .downArrow {
@@ -488,6 +498,8 @@ h1 {
   right: 0;
   margin: 0 auto;
   z-index: 2;
+  -webkit-animation: bounce 5s ease-in infinite;
+          animation: bounce 5s ease-in infinite;
 }
 
 .triangleUp {
@@ -957,6 +969,25 @@ h1 {
   border: none;
 }
 
+.contactSection .h2Container {
+  position: relative;
+}
+
+.homeArrow {
+  height: 3rem;
+  width: 3rem;
+  border-bottom: 0.5rem dotted lightseagreen;
+  border-right: 0.5rem dotted lightseagreen;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  position: absolute;
+  bottom: -1rem;
+  right: -4rem;
+  margin: 0;
+  -webkit-animation: bounceUp 5s ease-in infinite;
+          animation: bounceUp 5s ease-in infinite;
+}
+
 .contactCopy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1024,6 +1055,119 @@ h1 {
   z-index: -3;
 }
 
+@-webkit-keyframes bounce {
+  0%, 6%, 12.5%, 88%, 94%, 100% {
+    -webkit-transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(45deg);
+  }
+  91% {
+    -webkit-transform: translateY(0.3rem) rotate(45deg);
+            transform: translateY(0.3rem) rotate(45deg);
+  }
+  95% {
+    -webkit-transform: translateY(-0.08rem) rotate(45deg);
+            transform: translateY(-0.08rem) rotate(45deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 6%, 12.5%, 88%, 94%, 100% {
+    -webkit-transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(45deg);
+  }
+  91% {
+    -webkit-transform: translateY(0.3rem) rotate(45deg);
+            transform: translateY(0.3rem) rotate(45deg);
+  }
+  95% {
+    -webkit-transform: translateY(-0.08rem) rotate(45deg);
+            transform: translateY(-0.08rem) rotate(45deg);
+  }
+}
+@-webkit-keyframes wiggle {
+  0%, 100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  33% {
+    -webkit-transform: rotate(51deg);
+            transform: rotate(51deg);
+  }
+  66% {
+    -webkit-transform: rotate(41deg);
+            transform: rotate(41deg);
+  }
+}
+@keyframes wiggle {
+  0%, 100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  33% {
+    -webkit-transform: rotate(51deg);
+            transform: rotate(51deg);
+  }
+  66% {
+    -webkit-transform: rotate(41deg);
+            transform: rotate(41deg);
+  }
+}
+@-webkit-keyframes bounceUp {
+  0%, 6%, 12.5%, 88%, 94%, 100% {
+    -webkit-transform: translateY(0) rotate(-135deg);
+            transform: translateY(0) rotate(-135deg);
+  }
+  91% {
+    -webkit-transform: translateY(-0.3rem) rotate(-135deg);
+            transform: translateY(-0.3rem) rotate(-135deg);
+  }
+  95% {
+    -webkit-transform: translateY(0.08rem) rotate(-135deg);
+            transform: translateY(0.08rem) rotate(-135deg);
+  }
+}
+@keyframes bounceUp {
+  0%, 6%, 12.5%, 88%, 94%, 100% {
+    -webkit-transform: translateY(0) rotate(-135deg);
+            transform: translateY(0) rotate(-135deg);
+  }
+  91% {
+    -webkit-transform: translateY(-0.3rem) rotate(-135deg);
+            transform: translateY(-0.3rem) rotate(-135deg);
+  }
+  95% {
+    -webkit-transform: translateY(0.08rem) rotate(-135deg);
+            transform: translateY(0.08rem) rotate(-135deg);
+  }
+}
+@-webkit-keyframes wiggleUp {
+  0%, 100% {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+  }
+  33% {
+    -webkit-transform: rotate(-140deg);
+            transform: rotate(-140deg);
+  }
+  66% {
+    -webkit-transform: rotate(-131deg);
+            transform: rotate(-131deg);
+  }
+}
+@keyframes wiggleUp {
+  0%, 100% {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+  }
+  33% {
+    -webkit-transform: rotate(-140deg);
+            transform: rotate(-140deg);
+  }
+  66% {
+    -webkit-transform: rotate(-131deg);
+            transform: rotate(-131deg);
+  }
+}
 @media (max-height: 800px) and (min-width: 900px) {
   header {
     height: auto;
@@ -1322,5 +1466,10 @@ section p,
   }
   .projectContainer .projectCopy {
     padding: 0;
+  }
+
+  .homeArrow {
+    right: -3rem;
+    top: -7.75rem;
   }
 }
