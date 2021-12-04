@@ -763,14 +763,14 @@ h1 {
 
 .dashAccent {
   position: absolute;
-  bottom: -7rem;
-  right: 6rem;
+  bottom: -7.25rem;
+  right: 7rem;
   height: 40vw;
-  max-height: 29rem;
+  max-height: 30rem;
   width: 40vw;
   max-width: 29rem;
   border-radius: 50%;
-  border: 0.25rem dotted rgba(102, 51, 153, 0.397);
+  border: 0.75rem dotted rgba(102, 51, 153, 0.225);
   z-index: -1;
 }
 
@@ -1270,6 +1270,7 @@ section p,
     background-image: url(../../assets/keyboardImage.jpg);
     background-size: cover;
     background-position: 0;
+    border-radius: 0.125rem;
   }
   .aboutSection .aboutImg div {
     width: 13rem;
@@ -1279,6 +1280,9 @@ section p,
   }
   .aboutSection .aboutImg img, .aboutSection .aboutImg .overlay {
     display: none;
+  }
+  .aboutSection .dashAccent {
+    border: 0.5rem dotted rgba(102, 51, 153, 0.397);
   }
   .aboutSection .dashAccent2 {
     display: none;
@@ -1448,6 +1452,9 @@ section p,
   .aboutSection .sectionLink:nth-of-type(2) {
     margin: 1rem auto 0 auto;
     right: 0rem;
+  }
+  .aboutSection .dashAccent {
+    border: 0.3rem dotted rgba(102, 51, 153, 0.397);
   }
 
   .aboutSection::after {
