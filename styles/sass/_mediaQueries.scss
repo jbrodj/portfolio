@@ -99,6 +99,7 @@
             background-image: url(../../assets/keyboardImage.jpg);
             background-size: cover;
             background-position: 0;
+            border-radius: 0.125rem;
             div {
                 width: 13rem;
                 height: 13rem;
@@ -108,6 +109,9 @@
             img, .overlay {
                 display: none;
             }
+        }
+        .dashAccent {
+            border: 0.5rem dotted rgba(102, 51, 153, 0.397);
         }
         .dashAccent2 {
             display: none;
@@ -300,6 +304,9 @@
         .sectionLink:nth-of-type(2) {
             margin: 1rem auto 0 auto;
             right: 0rem;
+        }
+        .dashAccent {
+            border: 0.3rem dotted rgba(102, 51, 153, 0.397);
         }
     }
 
