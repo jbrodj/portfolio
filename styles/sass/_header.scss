@@ -58,6 +58,14 @@ h1 {
 .arrowLink:focus-within .downArrow {
     border-bottom: 0.5rem dotted gold;
     border-right: 0.5rem dotted gold;
+    animation: wiggle 0.5s ease 1;
+}
+
+.arrowLink:hover .homeArrow,
+.arrowLink:focus-within .homeArrow {
+        border-bottom: 0.5rem dotted gold;
+    border-right: 0.5rem dotted gold;
+    animation: wiggleUp 0.5s ease 1;
 }
 
 .downArrow {
@@ -72,4 +80,5 @@ h1 {
     right: 0;
     margin: 0 auto;
     z-index: 2;
+    animation: bounce 5s ease-in infinite;
 }

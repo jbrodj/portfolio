@@ -16,6 +16,23 @@
     }
 }
 
+.contactSection .h2Container {
+    position: relative;
+}
+
+.homeArrow {
+    height: 3rem;
+    width: 3rem;
+    border-bottom: 0.5rem dotted lightseagreen;
+    border-right: 0.5rem dotted lightseagreen;
+    transform: rotate(-135deg);
+    position: absolute;
+    bottom: -1rem;
+    right: -4rem;
+    margin: 0;
+    animation: bounceUp 5s ease-in infinite;
+}
+
 .contactCopy {
     display: flex;
     flex-direction: column;
