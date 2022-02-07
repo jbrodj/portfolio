@@ -782,6 +782,7 @@ h1 {
   width: 55%;
   border: 0.25rem dotted rgba(102, 51, 153, 0.055);
   z-index: -2;
+  border-radius: 0.75rem;
 }
 
 .aboutSection::before {
@@ -861,6 +862,7 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
+  border-radius: 0.25rem;
 }
 .projectContainer p {
   margin: 1rem 0;
@@ -900,6 +902,7 @@ h1 {
   width: 100%;
   position: absolute;
   z-index: -3;
+  border-radius: 0.75rem;
 }
 
 .leftAccent {

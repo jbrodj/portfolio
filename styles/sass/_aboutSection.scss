@@ -88,6 +88,7 @@
     width: 55%;
     border: 0.25rem dotted rgba(102, 51, 153, 0.055);
     z-index: -2;
+    border-radius: 0.75rem;
 }
 
 .aboutSection::before {
@@ -102,7 +103,6 @@
     border-style: solid;
     border-width: 4rem 0 4rem 100vw;
     border-color: $primaryColor transparent transparent $primaryColor;
-    // z-index: 3;
 }
 
 .aboutSection::after {
