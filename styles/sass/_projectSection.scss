@@ -54,7 +54,7 @@
     text-align: left;
 }
 
-.projectContainer:nth-of-type(2n) {
+.projectContainer:nth-of-type(2n - 1) {
     flex-direction: row-reverse;
 
     .projectCopy {
@@ -69,7 +69,21 @@
     a {
         align-self: flex-end;
     }
+
+    .creditLink {
+        color: black;
+        text-transform: none;
+        margin: 0;
+        border-bottom: none;
+        font-weight: normal;
+        text-decoration: underline;
+    }
+
+    .creditLink:hover {
+        color: rgb(231, 196, 0);
+    }
 }
+
 
 .projectImg > div {
     height: 100%;
@@ -87,6 +101,16 @@
 .rightAccent {
     left: 10%;
     top: 7.5%;
+}
+
+.proj0 {
+    a {
+        color: #538168;
+        border-bottom: 3px solid #538168;
+    }
+    .projectImg > div {
+        border: 0.25rem dotted #41504149;
+    }
 }
 
 .proj1 {
