@@ -878,23 +878,34 @@ h1 {
   text-align: left;
 }
 
-.projectContainer:nth-of-type(2n) {
+.projectContainer:nth-of-type(2n - 1) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-.projectContainer:nth-of-type(2n) .projectCopy {
+.projectContainer:nth-of-type(2n - 1) .projectCopy {
   padding: 1.5rem 0 1.5rem 1.5rem;
   text-align: left;
 }
-.projectContainer:nth-of-type(2n) .projectLinks {
+.projectContainer:nth-of-type(2n - 1) .projectLinks {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-.projectContainer:nth-of-type(2n) a {
+.projectContainer:nth-of-type(2n - 1) a {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+.projectContainer:nth-of-type(2n - 1) .creditLink {
+  color: black;
+  text-transform: none;
+  margin: 0;
+  border-bottom: none;
+  font-weight: normal;
+  text-decoration: underline;
+}
+.projectContainer:nth-of-type(2n - 1) .creditLink:hover {
+  color: #e7c400;
 }
 
 .projectImg > div {
@@ -913,6 +924,14 @@ h1 {
 .rightAccent {
   left: 10%;
   top: 7.5%;
+}
+
+.proj0 a {
+  color: #538168;
+  border-bottom: 3px solid #538168;
+}
+.proj0 .projectImg > div {
+  border: 0.25rem dotted #41504149;
 }
 
 .proj1 a {
