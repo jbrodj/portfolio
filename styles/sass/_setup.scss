@@ -100,7 +100,7 @@ a {
     p {
         margin-left: 4.75rem;
     }
-    span {
+    .sectionHeadingLine {
         border-left: 3px solid lightseagreen;
         display: inline-block;
         height: 2.5rem;
@@ -120,6 +120,7 @@ footer {
     height: 6rem;
     text-align: center;
     background-color: rgb(240, 246, 246);
+    background-color: #fff;
 }
 
 

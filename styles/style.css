@@ -337,7 +337,7 @@ a {
 .sectionHeading p {
   margin-left: 4.75rem;
 }
-.sectionHeading span {
+.sectionHeading .sectionHeadingLine {
   border-left: 3px solid lightseagreen;
   display: inline-block;
   height: 2.5rem;
@@ -362,6 +362,7 @@ footer {
   height: 6rem;
   text-align: center;
   background-color: #f0f6f6;
+  background-color: #fff;
 }
 
 .resumeLink, .downArrow {
@@ -733,6 +734,14 @@ h1 {
   color: lightseagreen;
   width: 100%;
 }
+.aboutCopy .learningNote {
+  width: 100%;
+}
+.aboutCopy .learningNote span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
 
 .sectionLink {
   position: absolute;
@@ -821,6 +830,7 @@ h1 {
   position: relative;
   z-index: 1;
   padding: 1.75rem 0;
+  margin-bottom: -4rem;
   overflow: hidden;
 }
 .projectSection .sectionHeading p {
@@ -838,7 +848,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 .projectContainer .projectCopy {
   padding: 1.5rem 1.5rem 1.5rem 0;
@@ -966,10 +976,62 @@ h1 {
   border: 0.25rem dotted #dd872c4f;
 }
 
+.growthSection::before {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 0;
+  border-style: solid;
+  border-width: 4rem 0 4rem 100vw;
+  border-color: #f0f6f6 transparent transparent #f0f6f6;
+  z-index: -3;
+}
+
+.growthSection::after {
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleY(-1) scaleX(-1);
+          transform: scaleY(-1) scaleX(-1);
+  bottom: -13rem;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 0;
+  border-style: solid;
+  border-width: 4rem 0 4rem 100vw;
+  border-color: #f0f6f6 transparent transparent #f0f6f6;
+  z-index: -3;
+}
+
+.growthSection {
+  position: relative;
+  min-height: 0;
+  text-align: right;
+  margin-bottom: 0rem;
+}
+
+.growthCopy {
+  margin: -1rem auto 0 auto;
+  padding: 1.25rem;
+  width: 60%;
+  max-width: 600px;
+  border: 0.25rem dotted rgba(102, 51, 153, 0.116);
+  border-radius: 1.5rem;
+}
+.growthCopy h3 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.growthCopy .learningNote {
+  margin-top: 0.25rem;
+}
+
 .contactSection {
   height: calc(100vh - 10rem);
-  max-height: 1000px;
-  min-height: 800px;
+  min-height: 850px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -980,8 +1042,10 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
   position: relative;
+  background-color: #f0f6f6;
 }
 .contactSection .sectionHeading p {
   margin-left: 6rem;
@@ -1061,20 +1125,6 @@ h1 {
 }
 .resumeContainer a.resumeLink:hover, .resumeContainer a.resumeLink:focus .resume {
   border: 3px solid gold;
-}
-
-.contactSection::before {
-  content: "";
-  position: absolute;
-  top: -13rem;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 0;
-  border-style: solid;
-  border-width: 4rem 0 4rem 100vw;
-  border-color: #f0f6f6 transparent transparent #f0f6f6;
-  z-index: -3;
 }
 
 @-webkit-keyframes bounce {
@@ -1230,7 +1280,6 @@ h1 {
 }
 @media (max-width: 900px) {
   section {
-    margin: 6rem;
     width: 100%;
     margin: 7rem auto;
   }
@@ -1251,7 +1300,7 @@ section p,
   .sectionHeading p {
     font-size: 0.75rem;
   }
-  .sectionHeading p span {
+  .sectionHeading p .sectionHeadingLine {
     padding: 0.12rem;
     height: 1.5rem;
   }
@@ -1313,9 +1362,10 @@ section p,
   .projectSection {
     padding-bottom: 0;
     margin-top: 10rem;
+    margin-bottom: 6rem;
   }
   .projectSection .allProjects article:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
   .projectSection .sectionHeading {
     margin-bottom: 2.5rem;
@@ -1370,6 +1420,18 @@ section p,
   .projectSection .projectImg .leftAccent {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg);
+  }
+
+  .growthSection {
+    margin-bottom: 10rem;
+  }
+
+  .growthCopy {
+    width: 90%;
+    margin-bottom: 0;
+  }
+  .growthCopy h3, .growthCopy p {
+    padding: 0;
   }
 
   .contactSection {
@@ -1445,6 +1507,10 @@ section p,
 
   .projectSection {
     margin-top: 5rem;
+  }
+
+  .projectContainer {
+    margin-bottom: 0;
   }
 
   .aboutSection .aboutImg {

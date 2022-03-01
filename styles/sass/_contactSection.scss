@@ -1,12 +1,14 @@
 .contactSection {
     height: calc(100vh - 10rem);
-    max-height: 1000px;
-    min-height: 800px;
+    // max-height: 1000px;
+    min-height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
     position: relative;
+    background-color: $angleBackground;
     .sectionHeading p {
         margin-left: 6rem;
     }
@@ -81,17 +83,16 @@
     }
 }
 
-.contactSection::before {
-    content: '';
-    position: absolute;
-    // transform: scaleY(-1) scaleX(-1);
-    top: -13rem;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 0;
-    border-style: solid;
-    border-width: 4rem 0 4rem 100vw;
-    border-color: $angleBackground transparent transparent $angleBackground;
-    z-index: -3;
-} 
+// .contactSection::before {
+//     content: '';
+//     position: absolute;
+//     top: -13rem;
+//     left: 0;
+//     right: 0;
+//     width: 100vw;
+//     height: 0;
+//     border-style: solid;
+//     border-width: 4rem 0 4rem 100vw;
+//     border-color: $angleBackground transparent transparent $angleBackground;
+//     z-index: -3;
+// } 
