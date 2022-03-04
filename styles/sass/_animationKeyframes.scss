@@ -1,5 +1,6 @@
 // DOTTED ARROW - HEADER
 
+// Timed effect
 @keyframes bounce {
     0%, 6%, 12.5%, 88%, 94%, 100% {
         transform: translateY(0) rotate(45deg);
@@ -12,6 +13,7 @@
     }
 }
 
+// Hover effect
 @keyframes wiggle {
     0%, 100% {
         transform: rotate(45deg);
@@ -27,6 +29,7 @@
 
 // DOTTED ARROW - CONTACT SECTION
 
+// Timed effect
 @keyframes bounceUp {
     0%, 6%, 12.5%, 88%, 94%, 100% {
         transform: translateY(0) rotate(-135deg);
@@ -39,6 +42,7 @@
     }
 }
 
+// Hover effect
 @keyframes wiggleUp {
     0%, 100% {
         transform: rotate(-135deg);

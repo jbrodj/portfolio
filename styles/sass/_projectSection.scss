@@ -3,6 +3,7 @@
     position: relative;
     z-index: 1;
     padding: 1.75rem 0;
+    margin-bottom: -4rem;
     overflow: hidden;
 
     .sectionHeading p {
@@ -15,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 
     .projectCopy {
         padding: 1.5rem 1.5rem 1.5rem 0;
@@ -42,7 +43,7 @@
     }
 
     a {
-        border-bottom: 3px solid lightseagreen;
+        border-bottom: 3px solid $accentText;
     }
 
     a:last-of-type {
@@ -115,8 +116,8 @@
 
 .proj1 {
     a {
-        color: #857EA9;
-        border-bottom: 3px solid #857EA9;
+        color: #6E6792;
+        border-bottom: 3px solid #6E6792;
     }
     .projectImg > div {
         border: 0.25rem dotted #ecdcc3a9;
@@ -135,8 +136,8 @@
 
 .proj3 {
     a {
-        color: #737593;
-        border-bottom: 3px solid #737593;
+        color: #676986;
+        border-bottom: 3px solid #676986;
     }
     .projectImg > div {
         border: 0.25rem dotted #CBCCE9;
@@ -145,8 +146,8 @@
 
 .proj4 {
     a {
-        color: #DD862C;
-        border-bottom: 3px solid #DD862C;
+        color: #DA6F00;;
+        border-bottom: 3px solid #DA6F00;;
     }
     .projectImg > div {
         border: 0.25rem dotted #dd872c4f;

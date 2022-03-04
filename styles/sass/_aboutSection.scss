@@ -11,7 +11,6 @@
     position: relative;
 }
 
-
 .aboutImg {
     width: 50%;
 }
@@ -29,7 +28,6 @@
         margin: 1rem 0;
         width: 75%;
     }
-
     
     .sectionLink:nth-of-type(2) {
         right: 9.7rem;
@@ -37,8 +35,18 @@
     :first-child {
         font-size: 1.5rem;
         font-weight: 700;
-        color: lightseagreen;
+        color: $accentText;
         width: 100%;
+    }
+
+    .learningNote {
+        width: 100%;
+    }
+
+    .learningNote span {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $nearBlack;
     }
 }
 
@@ -46,7 +54,7 @@
     position: absolute;
     bottom: 0;
     right: 0.95rem;
-    border-bottom: 3px solid lightseagreen;
+    border-bottom: 3px solid $accentText;
 }
 
 .aboutImg {

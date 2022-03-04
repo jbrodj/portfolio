@@ -14,6 +14,7 @@ html {
 
 body {
     overflow-x: hidden;
+    position: relative;
 }
 
 h1, h2, h3, p, a, ul, li {
@@ -48,7 +49,7 @@ a {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 100%;
-    color: lightseagreen;
+    color: $accentText;
 }
 
 a:hover,
@@ -79,7 +80,7 @@ h2, h3, p {
 
 section {
     margin: 10rem auto;
-    min-height: calc(100vh - 16rem);
+    // min-height: calc(100vh - 16rem);
 }
 
 a {
@@ -100,8 +101,8 @@ a {
     p {
         margin-left: 4.75rem;
     }
-    span {
-        border-left: 3px solid lightseagreen;
+    .sectionHeadingLine {
+        border-left: 3px solid $accentText;
         display: inline-block;
         height: 2.5rem;
         padding-right: 0.5rem;
@@ -117,9 +118,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6rem;
+    padding: 1.5rem;
     text-align: center;
     background-color: rgb(240, 246, 246);
+    background-color: #fff;
 }
 
 

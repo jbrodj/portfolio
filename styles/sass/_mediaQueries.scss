@@ -36,7 +36,6 @@
     // GENERAL STYLES
 
         section {
-            margin: 6rem;
             width: 100%;
             margin: 7rem auto;
         }
@@ -55,7 +54,7 @@
         padding: 2rem 1rem 2.5rem 1rem;
         p {
         font-size: 0.75rem;
-            span {
+            .sectionHeadingLine {
                 padding: 0.12rem;
                 height: 1.5rem;
             }
@@ -124,8 +123,9 @@
     .projectSection {
         padding-bottom: 0;
         margin-top: 10rem;
+        margin-bottom: 6rem;
         .allProjects article:last-of-type {
-            margin-bottom: 0;
+            margin-bottom: 2rem;
         }
         .sectionHeading {
             margin-bottom: 2.5rem;
@@ -178,6 +178,21 @@
             .leftAccent {
                 transform: rotate(-5deg);
             }
+        }
+    }
+
+// GROWTH SECTION STYLES
+
+    .growthSection {
+        // padding-bottom: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    .growthCopy {
+        width: 90%;
+        margin-bottom: 0;
+        h3, p{
+            padding: 0;
         }
     }
 
@@ -270,6 +285,10 @@
     .projectSection {
         margin-top: 5rem
     }
+
+    .projectContainer {
+        margin-bottom: 0;
+    }
     
     // ABOUT SECTION STYLES
     .aboutSection{
@@ -298,7 +317,7 @@
             position: relative;
             margin: 0 auto;
             right: 0rem;
-            border-bottom: 3px solid lightseagreen;
+            border-bottom: 3px solid $accentText;
         }
 
         .sectionLink:nth-of-type(2) {
