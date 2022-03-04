@@ -25,8 +25,8 @@
 .homeArrow {
     height: 3rem;
     width: 3rem;
-    border-bottom: 0.5rem dotted lightseagreen;
-    border-right: 0.5rem dotted lightseagreen;
+    border-bottom: 0.5rem dotted $accentText;
+    border-right: 0.5rem dotted $accentText;
     transform: rotate(-135deg);
     position: absolute;
     bottom: -1rem;

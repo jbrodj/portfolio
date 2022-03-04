@@ -35,7 +35,7 @@
     :first-child {
         font-size: 1.5rem;
         font-weight: 700;
-        color: lightseagreen;
+        color: $accentText;
         width: 100%;
     }
 
@@ -54,7 +54,7 @@
     position: absolute;
     bottom: 0;
     right: 0.95rem;
-    border-bottom: 3px solid lightseagreen;
+    border-bottom: 3px solid $accentText;
 }
 
 .aboutImg {

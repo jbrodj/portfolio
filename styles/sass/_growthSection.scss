@@ -50,3 +50,29 @@
         margin-top: 0.25rem;
     }
 }
+
+.learningHistory {
+    margin: 0 auto;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    width: 100%;
+    text-align: center;
+
+    h3 {
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    i {
+        font-size: 2rem;
+        display: inline-block;
+        color: $accentText;
+        margin: 0.25rem;
+    }
+
+    i:nth-of-type(3n - 1) {
+        color: rebeccapurple;
+    }
+    i:nth-of-type(3n) {
+        color: #bb5757;
+    }
+}

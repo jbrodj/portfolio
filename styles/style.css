@@ -241,6 +241,7 @@ html {
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 h1, h2, h3, p, a, ul, li {
@@ -275,7 +276,7 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 100%;
-  color: lightseagreen;
+  color: #0c8282;
 }
 
 a:hover,
@@ -338,7 +339,7 @@ a {
   margin-left: 4.75rem;
 }
 .sectionHeading .sectionHeadingLine {
-  border-left: 3px solid lightseagreen;
+  border-left: 3px solid #0c8282;
   display: inline-block;
   height: 2.5rem;
   padding-right: 0.5rem;
@@ -442,6 +443,7 @@ header nav {
 
 h1 {
   margin: 0 auto;
+  text-shadow: -1px -1px 0 #0c8282, 1px -1px 0 #0c8282, -1px 1px 0 #0c8282, 1px 1px 0 #0c8282;
 }
 
 .arrowBuddies {
@@ -508,7 +510,7 @@ h1 {
   height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid #1f9fc2;
+  border-bottom: 7px solid #0c8282;
 }
 
 .triangleDown {
@@ -731,7 +733,7 @@ h1 {
 .aboutCopy :first-child {
   font-size: 1.5rem;
   font-weight: 700;
-  color: lightseagreen;
+  color: #0c8282;
   width: 100%;
 }
 .aboutCopy .learningNote {
@@ -747,7 +749,7 @@ h1 {
   position: absolute;
   bottom: 0;
   right: 0.95rem;
-  border-bottom: 3px solid lightseagreen;
+  border-bottom: 3px solid #0c8282;
 }
 
 .aboutImg {
@@ -878,7 +880,7 @@ h1 {
   margin: 1rem 0;
 }
 .projectContainer a {
-  border-bottom: 3px solid lightseagreen;
+  border-bottom: 3px solid #0c8282;
 }
 .projectContainer a:last-of-type {
   margin-left: 0.75rem;
@@ -945,8 +947,8 @@ h1 {
 }
 
 .proj1 a {
-  color: #857EA9;
-  border-bottom: 3px solid #857EA9;
+  color: #6E6792;
+  border-bottom: 3px solid #6E6792;
 }
 .proj1 .projectImg > div {
   border: 0.25rem dotted #ecdcc3a9;
@@ -961,16 +963,16 @@ h1 {
 }
 
 .proj3 a {
-  color: #737593;
-  border-bottom: 3px solid #737593;
+  color: #676986;
+  border-bottom: 3px solid #676986;
 }
 .proj3 .projectImg > div {
   border: 0.25rem dotted #CBCCE9;
 }
 
 .proj4 a {
-  color: #DD862C;
-  border-bottom: 3px solid #DD862C;
+  color: #DA6F00;
+  border-bottom: 3px solid #DA6F00;
 }
 .proj4 .projectImg > div {
   border: 0.25rem dotted #dd872c4f;
@@ -1029,6 +1031,29 @@ h1 {
   margin-top: 0.25rem;
 }
 
+.learningHistory {
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 0 1.25rem;
+  width: 100%;
+  text-align: center;
+}
+.learningHistory h3 {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+.learningHistory i {
+  font-size: 2rem;
+  display: inline-block;
+  color: #0c8282;
+  margin: 0.25rem;
+}
+.learningHistory i:nth-of-type(3n - 1) {
+  color: rebeccapurple;
+}
+.learningHistory i:nth-of-type(3n) {
+  color: #bb5757;
+}
+
 .contactSection {
   height: calc(100vh - 10rem);
   min-height: 850px;
@@ -1062,8 +1087,8 @@ h1 {
 .homeArrow {
   height: 3rem;
   width: 3rem;
-  border-bottom: 0.5rem dotted lightseagreen;
-  border-right: 0.5rem dotted lightseagreen;
+  border-bottom: 0.5rem dotted #0c8282;
+  border-right: 0.5rem dotted #0c8282;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
   position: absolute;
@@ -1535,7 +1560,7 @@ section p,
     position: relative;
     margin: 0 auto;
     right: 0rem;
-    border-bottom: 3px solid lightseagreen;
+    border-bottom: 3px solid #0c8282;
   }
   .aboutSection .sectionLink:nth-of-type(2) {
     margin: 1rem auto 0 auto;
