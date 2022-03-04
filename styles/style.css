@@ -305,7 +305,6 @@ h2, h3, p {
 
 section {
   margin: 10rem auto;
-  min-height: calc(100vh - 16rem);
 }
 
 a {
@@ -360,7 +359,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 6rem;
+  padding: 1.5rem;
   text-align: center;
   background-color: #f0f6f6;
   background-color: #fff;
@@ -1014,6 +1013,9 @@ h1 {
   text-align: right;
   margin-bottom: 0rem;
 }
+.growthSection .sectionHeading p {
+  margin-left: 6.5rem;
+}
 
 .growthCopy {
   margin: -1rem auto 0 auto;
@@ -1055,8 +1057,6 @@ h1 {
 }
 
 .contactSection {
-  height: calc(100vh - 10rem);
-  min-height: 850px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
