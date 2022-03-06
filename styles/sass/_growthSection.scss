@@ -53,6 +53,15 @@
     .learningNote {
         margin-top: 0.25rem;
     }
+
+    .currentLearning {
+        color: $accentText;
+        display: inline-block;
+        width: 100%;
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
 }
 
 .learningHistory {

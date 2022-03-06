@@ -1032,6 +1032,14 @@ h1 {
 .growthCopy .learningNote {
   margin-top: 0.25rem;
 }
+.growthCopy .currentLearning {
+  color: #0c8282;
+  display: inline-block;
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 1rem;
+}
 
 .learningHistory {
   margin: 0 auto;
@@ -1586,6 +1594,13 @@ section p,
   }
   .projectContainer .projectCopy {
     padding: 0;
+  }
+
+  .growthSection {
+    text-align: center;
+  }
+  .growthSection a, .growthSection p {
+    font-size: 0.9rem;
   }
 
   .homeArrow {
