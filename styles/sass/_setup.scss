@@ -97,10 +97,13 @@ a {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 3rem 1rem;
-    p {
-        margin-left: 4.75rem;
+
+    p {   
+        margin-left: 5.25rem;
     }
+
     .sectionHeadingLine {
         border-left: 3px solid $accentText;
         display: inline-block;
@@ -123,7 +126,6 @@ footer {
     background-color: rgb(240, 246, 246);
     background-color: #fff;
 }
-
 
 .resumeLink, .downArrow {
     transition: 0.2s;
