@@ -332,10 +332,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   padding: 3rem 1rem;
 }
 .sectionHeading p {
-  margin-left: 4.75rem;
+  margin-left: 5.25rem;
 }
 .sectionHeading .sectionHeadingLine {
   border-left: 3px solid #0c8282;
@@ -834,9 +835,6 @@ h1 {
   margin-bottom: -4rem;
   overflow: hidden;
 }
-.projectSection .sectionHeading p {
-  margin-left: 6rem;
-}
 
 .projectContainer {
   display: -webkit-box;
@@ -1013,9 +1011,6 @@ h1 {
   text-align: right;
   margin-bottom: 0rem;
 }
-.growthSection .sectionHeading p {
-  margin-left: 6.5rem;
-}
 
 .growthCopy {
   margin: -1rem auto 0 auto;
@@ -1079,9 +1074,6 @@ h1 {
   margin-bottom: 0;
   position: relative;
   background-color: #f0f6f6;
-}
-.contactSection .sectionHeading p {
-  margin-left: 6rem;
 }
 .contactSection a:hover,
 .contactSection a:focus {
@@ -1397,7 +1389,7 @@ section p,
     margin-top: 10rem;
     margin-bottom: 6rem;
   }
-  .projectSection .allProjects article:last-of-type {
+  .projectSection .projectContainer:last-of-type {
     margin-bottom: 2rem;
   }
   .projectSection .sectionHeading {
@@ -1467,10 +1459,6 @@ section p,
     padding: 0;
   }
 
-  .contactSection {
-    margin-bottom: 2rem;
-  }
-
   .contactSection::before {
     top: -8rem;
   }
@@ -1488,14 +1476,17 @@ section p,
   .contactNav i {
     font-size: 1.5rem;
   }
-
-  footer {
-    height: 4rem;
-  }
 }
 @media (max-width: 500px) {
   .wrapper {
     width: 100%;
+  }
+
+  .projectSection {
+    margin-top: 5rem;
+  }
+  .projectSection .sectionHeading p {
+    margin-left: 3.8rem;
   }
 
   header {
@@ -1534,24 +1525,13 @@ section p,
     bottom: -0.5rem;
   }
 
-  .aboutSection {
-    margin-bottom: 5rem;
-  }
-
-  .projectSection {
-    margin-top: 5rem;
-  }
-
-  .projectContainer {
-    margin-bottom: 0;
-  }
-
   .aboutSection .aboutImg {
     width: 100%;
     height: 8rem;
     background-image: url(../../assets/keyboardImage.jpg);
     background-size: cover;
     background-position: 0 center;
+    margin-bottom: 5rem;
   }
   .aboutSection .aboutImg div {
     width: 11rem;
@@ -1582,29 +1562,31 @@ section p,
     bottom: -9rem;
   }
 
-  .projectSection .allProjects article:last-of-type {
-    margin-bottom: 0;
-  }
   .projectSection .projectCopy {
     margin-top: 1.75rem;
   }
-
-  .projectContainer {
-    margin-bottom: 4rem;
+  .projectSection .projectContainer {
+    margin: 5rem 0;
   }
-  .projectContainer .projectCopy {
+  .projectSection .projectContainer .projectCopy {
     padding: 0;
+  }
+  .projectSection .projectContainer:last-of-type {
+    margin-bottom: 1rem;
   }
 
   .growthSection {
     text-align: center;
   }
-  .growthSection a, .growthSection p {
+  .growthSection a, .growthSection .growthCopy p {
     font-size: 0.9rem;
+  }
+  .growthSection .growthCopy i {
+    font-size: 3.25rem;
   }
 
   .homeArrow {
-    right: -3rem;
-    top: -7.75rem;
+    right: -3.5rem;
+    top: -2.25rem;
   }
 }

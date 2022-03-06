@@ -1,6 +1,6 @@
 // ====== INJECT SKILL ICONS FOR GROWTH SECTION ======
 
-// Title for tooltip; class name from devicon classes.
+// Title for tooltip; class name from devicon classes (appended to 'devicon-').
 const skillIcons = [
     {
         title: 'HTML5',
@@ -67,7 +67,7 @@ const growthCopy = document.getElementById('growthCopy');
 const currentIcon = document.createElement('i');
 growthCopy.appendChild(currentIcon)
 
-// Loop over icons array, find index with current title, and set class, alt text, and title from that index.
+// Loop over icons array, find index with current title value, and set class, alt text, and title from that index.
 function current(array, title) {
     for (let i = 0; i < array.length; i++) {
         if (array[i].title === title) {
