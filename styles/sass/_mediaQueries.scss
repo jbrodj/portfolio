@@ -165,8 +165,8 @@
             }
         }
 
-        .projectImg {
-            div {
+        .projectContainer {
+            .projectAccent {
                 top: -8%;
                 left: 0;
                 right: 0;
@@ -175,7 +175,9 @@
                 width: 85%;
                 transform: rotate(5deg);
             }
-            .leftAccent {
+        }
+        .projectContainer:nth-of-type(2n) {
+            .projectAccent{
                 transform: rotate(-5deg);
             }
         }
@@ -338,6 +340,9 @@
         }
         .projectContainer:last-of-type {
             margin-bottom: 1rem;
+        }
+        .projectImg img {
+            border-radius: 0;
         }
     }
     

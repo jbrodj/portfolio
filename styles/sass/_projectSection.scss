@@ -90,17 +90,27 @@
     border-radius: 0.75rem;
 }
 
-.leftAccent {
+.projectContainer:nth-of-type(2n - 1) .projectAccent {
+    left: 10%;
+    top: 7.5%;    
+}
+
+.projectContainer:nth-of-type(2n) .projectAccent {
     right: 10%;
     top: 7.5%;
 }
 
-.rightAccent {
-    left: 10%;
-    top: 7.5%;
-}
+// .leftAccent {
+//     right: 10%;
+//     top: 7.5%;
+// }
 
-.proj0 {
+// .rightAccent {
+//     left: 10%;
+//     top: 7.5%;
+// }
+
+.giftExchange {
     a {
         color: #538168;
         border-bottom: 3px solid #538168;
@@ -110,7 +120,7 @@
     }
 }
 
-.proj1 {
+.iBag {
     a {
         color: #6E6792;
         border-bottom: 3px solid #6E6792;
@@ -120,7 +130,7 @@
     }
 }
 
-.proj2 {
+.letsWatch {
     a {
         color: #4d203cbc;
         border-bottom: 3px solid #4d203cbc;
@@ -130,7 +140,7 @@
     }
 }
 
-.proj3 {
+.whichGame {
     a {
         color: #676986;
         border-bottom: 3px solid #676986;
@@ -140,7 +150,7 @@
     }
 }
 
-.proj4 {
+.barOne {
     a {
         color: #DA6F00;;
         border-bottom: 3px solid #DA6F00;;
