@@ -1584,13 +1584,13 @@ section p,
     border-radius: 0;
   }
 
-  .growthSection {
+  .growthSection, .growthSection h3 {
     text-align: center;
   }
-  .growthSection a, .growthSection .growthCopy p {
+  .growthSection a, .growthSection .growthCopy p, .growthSection h3 a, .growthSection h3 .growthCopy p {
     font-size: 0.9rem;
   }
-  .growthSection .growthCopy i {
+  .growthSection .growthCopy i, .growthSection h3 .growthCopy i {
     font-size: 3.25rem;
   }
 
