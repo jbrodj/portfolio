@@ -8,6 +8,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+// SETUP & NORMALIZE
+
 html {
     font-size: 20px;
 }
@@ -46,20 +48,6 @@ p {
 
 a {
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 100%;
-    color: $accentText;
-}
-
-a:hover,
-a:focus, 
-.aboutSection a:hover,
-.projectSection a:focus,
-section .projectSection a:focus,
-.projectSection a:hover {
-    color: gold;
-    border-bottom: 3px solid gold;
 }
 
 .wrapper {
@@ -78,17 +66,31 @@ h2, h3, p {
     color: #222;
 }
 
-section {
-    margin: 10rem auto;
-    // min-height: calc(100vh - 16rem);
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 a {
-    transition: color 0.2s;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 100%;
+    color: $accentText;
+    transition: color 0.2s ease, border 0.1s ease;
 }
 
-.arrowLink {
-    transition: 3s;
+a:hover,
+a:focus, 
+.aboutSection a:hover,
+.projectSection a:focus,
+section .projectSection a:focus,
+.projectSection a:hover {
+    color: gold;
+    border-bottom: 3px solid gold;
+}
+
+section {
+    margin: 10rem auto;
 }
 
 .sectionHeading {
@@ -112,11 +114,6 @@ a {
     }
 }
 
-h2 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
 footer {
     display: flex;
     justify-content: center;
@@ -127,6 +124,6 @@ footer {
     background-color: #fff;
 }
 
-.resumeLink, .downArrow {
-    transition: 0.2s;
+.resumeLink, .downArrow, .homeArrow {
+    transition: border 0.3s ease;
 }
