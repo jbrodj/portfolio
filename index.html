@@ -47,10 +47,10 @@
         </div>
     </header>
 
-    <section class="aboutSection" id="aboutSection">
+    <section class="aboutSection" id="aboutSection" aria-labelledby="aboutTitle">
         <div class="wrapper">            
             <div class="sectionHeading">
-                <h2>Hello</h2>
+                <h2 id="aboutTitle">Hello</h2>
                 <p><span class="sectionHeadingLine"></span>who am i</p>
             </div>
             <div class="aboutContent">
@@ -71,20 +71,20 @@
         </div>
     </section>
         
-    <section class="projectSection">
+    <section class="projectSection" aria-labelledby="workTitle">
         <div class="wrapper">            
             <div class="sectionHeading" id="projectSection">
-                <h2>My work</h2>
+                <h2 id="workTitle">My work</h2>
                 <p><span class="sectionHeadingLine"></span>rad projects</p>
             </div>
             <div class="allProjects" id="allProjects"></div>
         </div>
     </section>
 
-    <section class="growthSection" id="growthSection">
+    <section class="growthSection" id="growthSection" aria-labelledby="growthTitle">
         <div class="wrapper">
             <div class="sectionHeading">
-                <h2>growth</h2>
+                <h2 id="growthTitle">growth</h2>
                 <p><span class="sectionHeadingLine"></span>my journey</p>
             </div>
             <div class="growthCopy" id="growthCopy">
@@ -99,10 +99,10 @@
         </div>
     </section>
 
-    <section class="contactSection" id="contactSection">
-        <div class="sectionHeading">
+    <section class="contactSection" id="contactSection" aria-labelledby="contactTitle">
+        <div class="sectionHeading">    
             <div class="h2Container">
-                <h2>Contact</h2>
+                <h2 id="contactTitle">Contact</h2>
                 <a href="#" class="arrowLink" title="Go back to top">
                     <div class="homeArrow"></div>
                 </a>
@@ -115,13 +115,14 @@
                 <p>647.270.8577</p>
             </div>
             <nav class="contactNav">
-                <a href="https://github.com/jbrodj" target="blank">
+                <h3 class="sr-only">Where else you can find me</h3>
+                <a href="https://github.com/jbrodj" target="blank" title="My GitHub Profile">
                     <i class="devicon-github-original"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/j-brodie-day-3b2775219/" target="blank">
+                <a href="https://www.linkedin.com/in/j-brodie-day-3b2775219/" target="blank" title="My LinkedIn Page">
                     <i class="devicon-linkedin-plain"></i>
                 </a>
-                <a href="https://twitter.com/jbrodj" target="blank">
+                <a href="https://twitter.com/jbrodj" target="blank" title="My Twitter Account">
                     <i class="devicon-twitter-original"></i>
                 </a>
             </nav>
