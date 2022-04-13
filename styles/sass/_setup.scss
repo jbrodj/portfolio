@@ -62,20 +62,7 @@ html {
     scroll-behavior: smooth;
 }
 
-h2, h3, p {
-    color: #222;
-}
-
-h2 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
 a {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 100%;
-    color: $accentText;
     transition: color 0.2s ease, border 0.1s ease;
 }
 
