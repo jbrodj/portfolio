@@ -66,21 +66,7 @@
     a {
         align-self: flex-end;
     }
-
-    .creditLink {
-        color: black;
-        text-transform: none;
-        margin: 0;
-        border-bottom: none;
-        font-weight: normal;
-        text-decoration: underline;
-    }
-
-    .creditLink:hover {
-        color: rgb(231, 196, 0);
-    }
 }
-
 
 .projectImg > div {
     height: 100%;
@@ -99,16 +85,6 @@
     right: 10%;
     top: 7.5%;
 }
-
-// .leftAccent {
-//     right: 10%;
-//     top: 7.5%;
-// }
-
-// .rightAccent {
-//     left: 10%;
-//     top: 7.5%;
-// }
 
 .giftExchange {
     a {
