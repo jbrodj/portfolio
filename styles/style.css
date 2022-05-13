@@ -1039,12 +1039,41 @@ h1 {
   display: inline-block;
   color: #0c8282;
   margin: 0.25rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .learningHistory i:nth-of-type(3n - 1) {
   color: rebeccapurple;
 }
 .learningHistory i:nth-of-type(3n) {
   color: #bb5757;
+}
+.learningHistory p + p {
+  margin-top: 1.25rem;
+}
+.learningHistory .author {
+  color: #0c8282;
+  margin-top: 0;
+}
+.learningHistory .highlightedIcon {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.learningHistory .highlightedIcon::after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-bottom: 10px solid #0c8282;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  bottom: -50%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
 
 .contactSection {

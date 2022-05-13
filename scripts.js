@@ -42,13 +42,13 @@ const skillIcons = [
         title: 'Git',
         class: 'git-plain'
     }
-]
+];
 
 // P element that will contain the icons. Maybe this p should be an unordered list.
-const paragraph = document.getElementById('skillParagraph')
+const paragraph = document.getElementById('skillParagraph');
 
 // Loop and print an icon for each index in the icons object.
-skillIcons.forEach(skill => addSkillIcons(skill))
+skillIcons.forEach(skill => addSkillIcons(skill));
 
 function addSkillIcons(index) {
     const icon = document.createElement('i');
@@ -56,8 +56,119 @@ function addSkillIcons(index) {
     icon.classList = `devicon-${index.class}`;
     icon.setAttribute('alt', `${index.title}`)
     paragraph.appendChild(icon);
+
+    // if (icon.classList.contains(currentTickerItem.subjects)) {
+    //     console.log('yes')
+    // }
 }
 // ==========================================
+
+
+// ====== COURSES TAKEN TICKER ======
+
+let currentSubjects = ''
+let currentTickerItem = {}
+let currentTickerIndex = 0
+
+const courses = [
+    {
+    courseTitle: 'Intro to Web Development',
+    author: 'Juno College of Technology',
+    subjects: 'HTML5, CSS3'
+    },
+    {
+    courseTitle: 'Accelerated JavaScript',
+    author: 'Juno College of Technology',
+    subjects: 'JavaScript ES6, JQuery'
+    },
+    {
+    courseTitle: 'Immersive Bootcamp',
+    author: 'Juno College of Technology',
+    subjects: 'JavaScript ES6, HTML5, CSS3, Git, GitHub, Sass'
+    },
+];
+
+currentTickerItem = courses[currentTickerIndex]
+
+const tickerTitle = document.getElementById('skillTicker');
+const tickerAuthor = document.getElementById('authorTicker');
+
+
+setTimeout(print, 2000)
+
+function print() {
+    for (let i = 0; i < courses.length; i++) {
+        printTicker(i)
+        checkIconList()
+    }
+    // setTimeout(print, 2000)
+}
+
+function printTicker(i) {
+    currentTickerItem = courses[i]
+    tickerTitle.innerHTML = `${courses[i].courseTitle}`;
+    tickerAuthor.innerHTML = `${courses[i].author}`;
+
+    currentSubjects = currentTickerItem.subjects
+}
+
+// Print the initial value.
+// printTicker(0)
+
+// function incrementCourse() {
+//     if (currentTickerIndex >= courses.length) {
+//         currentTickerIndex = 0;
+
+//     } else {
+//         currentTickerIndex++;
+//         console.log(currentTickerIndex)
+//     }
+//     printTicker(currentTickerIndex)
+//     checkIconList()
+//     console.log(currentTickerIndex)
+// }
+
+// setTimeout(incrementCourse, 2000)
+// setTimeout(incrementCourse, 2000)
+
+// =======================================================
+
+// ====== CHECK ICON LIST ======
+// Highlights the skill icons that are relevant to the currently displayed course in the ticker.
+
+// Access the paragraph of icons, and store the children as a node list. 
+const iconList = paragraph.children;
+
+// Initialize empty array to store the currently highlighted icons.
+let highlighted = []
+
+// Function to loop over the nodelist of icons and check if their title matches the topics of the currently displayed ticker item. If it matches, add a class to that element to style it. 
+function checkIconList() {
+    // Remove the highlighted classes from the previously highlighted items.
+    highlighted.forEach(function(item) {
+        item.classList.remove('highlightedIcon')
+    })
+    // Reset the highlighted objects each time function runs. 
+    highlighted = []
+
+    // Loop over the icons
+    for (let i = 0; i < iconList.length; i++) {
+        // console.log(iconList[i].title)
+
+        // Check if the title and subjects match, and add to the highlighted array.
+        if (currentSubjects.includes(iconList[i].title)) {
+            // console.log(iconList[i])
+            highlighted.push(iconList[i])
+        }
+    }
+    console.log(highlighted)
+    // Add higlight class to each item in the highlighted array. 
+    highlighted.forEach(function(item) {
+        item.classList.add('highlightedIcon')
+    })
+}
+
+checkIconList()
 
 
 // ====== INJECT CURRENT LEARNING ICON ======
@@ -69,21 +180,22 @@ let currentLearning = 'CSS3';
 const growthCopy = document.getElementById('growthCopy');
 // Create & append icon element.
 const currentIcon = document.createElement('i');
-growthCopy.appendChild(currentIcon)
+growthCopy.appendChild(currentIcon);
 
 // Loop over icons array, find index with current title value, and set class, alt text, and title from that index.
 function current(array, title) {
     for (let i = 0; i < array.length; i++) {
         if (array[i].title === title) {
             currentIcon.classList = `currentLearning devicon-${array[i].class}`;
-            currentIcon.setAttribute('alt', `${title} logo.`)
+            currentIcon.setAttribute('alt', `${title} logo.`);
             currentIcon.title = title
         }
     }
 }
 
-current(skillIcons, currentLearning)
+current(skillIcons, currentLearning);
 // ======================================================
+
 
 
 // ====== INJECT PROJECT DATA FOR PROJECTS SECTION ======

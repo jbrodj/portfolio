@@ -76,6 +76,7 @@
         display: inline-block;
         color: $accentText;
         margin: 0.25rem;
+        transition: all 1s;
     }
 
     i:nth-of-type(3n - 1) {
@@ -83,5 +84,35 @@
     }
     i:nth-of-type(3n) {
         color: #bb5757;
+    }
+
+    p + p {
+        margin-top: 1.25rem;
+    }
+
+    .author {
+        color: $accentText;
+        margin-top: 0;
+    }
+
+    .highlightedIcon {
+        transition: all 1s ease;
+        transform: scale(1.1);
+        // animation: iconBounce 0s ease-in once;
+    }
+
+    .highlightedIcon::after {
+        position: absolute;
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-bottom: 10px solid $accentText;
+            border-right: 10px solid transparent;
+            border-top: 10px solid transparent;
+            border-left: 10px solid transparent;
+            bottom: -50%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
     }
 }
