@@ -42,8 +42,8 @@
         border-bottom: 3px solid $accentText;
     }
 
-    a:last-of-type {
-        margin-left: 0.75rem;
+    a:first-of-type {
+        margin-right: 0.75rem;
     }
 }
 
@@ -84,6 +84,22 @@
 .projectContainer:nth-of-type(2n) .projectAccent {
     right: 10%;
     top: 7.5%;
+}
+
+.telus a {
+    color: #6f19ad;
+    border-bottom: 3px solid #6f19ad;
+}
+.telus .projectImg > div {
+    border: 0.25rem dotted rgba(111, 25, 173, 0.286);
+}
+
+.telus2 a {
+    color: #148f24;
+    border-bottom: 3px solid #148f24;
+}
+.telus2 .projectImg > div {
+    border: 0.25rem dotted rgba(20, 143, 36, 0.286);
 }
 
 .giftExchange {
