@@ -1,20 +1,20 @@
 // ====== INJECT SKILL ICONS FOR GROWTH SECTION ======
 
-// Title for tooltip; class name from devicon classes (appended to 'devicon-').
+// Title for tooltip; class name from devicon classes (appended to 'devicon-'). From https://devicon.dev/ 
 const skillIcons = [
     {
         title: 'HTML5',
         class: 'html5-plain', 
     },
-        {
+    {
         title: 'CSS3',
         class: 'css3-plain'
     },
-        {
+    {
         title: 'JavaScript ES6',
         class: 'javascript-plain'
     },
-        {
+    {
         title: 'React',
         class: 'react-original'
     },
@@ -22,25 +22,73 @@ const skillIcons = [
         title: 'JQuery',
         class: 'jquery-plain'
     },
-        {
+    {
         title: 'Sass',
         class: 'sass-original'
     },
-        {
+    {
         title: 'Python',
         class: 'python-plain'
     },
-        {
+    {
         title: 'NodeJS',
         class: 'nodejs-plain'
     },
-        {
+    {
+        title: 'NPM',
+        class: 'npm-original-wordmark'
+    },
+    {
         title: 'GitHub',
         class: 'github-original'
     },
-        {
+    {
+        title: 'GitHub Actions',
+        class: 'githubactions-plain'
+    },
+    {
         title: 'Git',
         class: 'git-plain'
+    },
+    {
+        title: 'Docker',
+        class: 'docker-plain'
+    },
+    {
+        title: 'ExpressJS',
+        class: 'express-original'
+    },
+    {
+        title: 'Google Cloud Platform',
+        class: 'googlecloud-plain'
+    },
+    {
+        title: 'Jest',
+        class: 'jest-plain'
+    },
+    {
+        title: 'Cypress',
+        class: 'cypressio-plain'
+    },
+    {
+        title: 'ESLint',
+        class: 'eslint-plain'
+    },
+    {
+        title: 'Postman',
+        class: 'postman-plain'
+    },
+    {
+        title: 'Jira',
+        class: 'jira-plain'
+    },
+    {
+        title: 'Confluence',
+        class: 'confluence-plain'
+    },
+    {
+        title: 'MongoDB',
+        class: 'mongodb-plain'
     }
 ]
 
