@@ -1,20 +1,20 @@
 // ====== INJECT SKILL ICONS FOR GROWTH SECTION ======
 
-// Title for tooltip; class name from devicon classes (appended to 'devicon-').
+// Title for tooltip; class name from devicon classes (appended to 'devicon-'). From https://devicon.dev/ 
 const skillIcons = [
     {
         title: 'HTML5',
         class: 'html5-plain', 
     },
-        {
+    {
         title: 'CSS3',
         class: 'css3-plain'
     },
-        {
+    {
         title: 'JavaScript ES6',
         class: 'javascript-plain'
     },
-        {
+    {
         title: 'React',
         class: 'react-original'
     },
@@ -22,25 +22,73 @@ const skillIcons = [
         title: 'JQuery',
         class: 'jquery-plain'
     },
-        {
+    {
         title: 'Sass',
         class: 'sass-original'
     },
-        {
+    {
         title: 'Python',
         class: 'python-plain'
     },
-        {
+    {
         title: 'NodeJS',
         class: 'nodejs-plain'
     },
-        {
+    {
+        title: 'NPM',
+        class: 'npm-original-wordmark'
+    },
+    {
         title: 'GitHub',
         class: 'github-original'
     },
-        {
+    {
+        title: 'GitHub Actions',
+        class: 'githubactions-plain'
+    },
+    {
         title: 'Git',
         class: 'git-plain'
+    },
+    {
+        title: 'Docker',
+        class: 'docker-plain'
+    },
+    {
+        title: 'ExpressJS',
+        class: 'express-original'
+    },
+    {
+        title: 'Google Cloud Platform',
+        class: 'googlecloud-plain'
+    },
+    {
+        title: 'Jest',
+        class: 'jest-plain'
+    },
+    {
+        title: 'Cypress',
+        class: 'cypressio-plain'
+    },
+    {
+        title: 'ESLint',
+        class: 'eslint-plain'
+    },
+    {
+        title: 'Postman',
+        class: 'postman-plain'
+    },
+    {
+        title: 'Jira',
+        class: 'jira-plain'
+    },
+    {
+        title: 'Confluence',
+        class: 'confluence-plain'
+    },
+    {
+        title: 'MongoDB',
+        class: 'mongodb-plain'
     }
 ]
 
@@ -63,7 +111,7 @@ function addSkillIcons(index) {
 // ====== INJECT CURRENT LEARNING ICON ======
 
 // --> Set current topic here! <--
-let currentLearning = 'CSS3';
+let currentLearning = 'MongoDB';
 
 // Store copy container in growth section.
 const growthCopy = document.getElementById('growthCopy');
@@ -90,6 +138,22 @@ current(skillIcons, currentLearning)
 
 // Array to contain project data
 const projects = [
+    {
+        title: 'My TELUS Universal Experiences',
+        liveUrl: 'https://www.telus.com/',
+        imgUrl: './assets/telusMyTelusView.png',
+        imgAlt: 'Screenshot of the My Telus App overview page.',
+        copy: `Full stack universal experiences for the authenticated account space in the My Telus experience. Including customer data API, app navigation, universal UI elements, and app-wide end-to-end. Built in React, Express & Node. Tested with Jest and Cypress using Github Actions for automated runs. Using Docker for containerization; deployed on GKE and monitored with Dynatrace.`,
+        accentColorClass: 'telus'
+    },
+    {
+        title: 'TELUS Cart, Checkout, Thank-you Journeys',
+        liveUrl: 'https://www.telus.com',
+        imgUrl: './assets/telusCheckoutView.png',
+        imgAlt: 'Screenshot of the Telus cart page with an iphone and plush alpaca in the cart.',
+        copy: `Full-stack e-commerce journeys for all new and existing business and consumer users across Canada. Built in React, Express & Node. Tested with Jest and Cypress using Github Actions for automated runs. Using Docker for containerization and Redis; deployed on GKE and monitored with Dynatrace.`,
+        accentColorClass: 'telus2'
+    },
     {
         title: 'Gift Exchange Randomizer',
         liveUrl: 'https://giftexchange.netlify.app/',
@@ -138,71 +202,71 @@ const projects = [
 ]
 
 // Create necessary elements for each project, populate, and append.
-function addProjects(array) {
-    for (let i = 0; i < array.length; i++) {
+const addProjects = (projects) => {
+  projects.map((project) => {
+    // Each project is an article that sits inside this projectsDiv.
+    const projectsDiv = document.getElementById('allProjects')
 
-        // Each project is an article that sits inside this projectsDiv.
-        const projectsDiv = document.getElementById('allProjects')
+    // Each project is contained in an article with individual class for that project's colour scheme.
+    const article = document.createElement('article');
+    article.classList = `projectContainer ${project.accentColorClass}`;
+    
+    // Project copy is a flex container containing heading, descriptive text, and a div containing live and repo links. 
+    const copyContainer = document.createElement('div');
+    copyContainer.classList = 'projectCopy';
 
-        // Each project is contained in an article with individual class for that project's colour scheme.
-        const article = document.createElement('article');
-        article.classList = `projectContainer ${array[i].accentColorClass}`;
-        
-        // Project copy is a flex container containing heading, descriptive text, and a div containing live and repo links. 
-        const copyContainer = document.createElement('div');
-        copyContainer.classList = 'projectCopy';
-
-        // Project heading
-        const heading = document.createElement('h3');
-        heading.textContent = array[i].title;
-        
-        // Project copy
-        const copyText = document.createElement('p');
-        copyText.innerText = array[i].copy;
-        
-        // Anchors for project urls
-        const linkDiv = document.createElement('div')
-        linkDiv.classList = 'projectLinks'
-            // Live url
-        const liveLink = document.createElement('a')
-        liveLink.setAttribute('href', array[i].liveUrl)
-        liveLink.textContent = 'Live'
-            // Repo url
-        const repoLink = document.createElement('a')
-        repoLink.setAttribute('href', array[i].repoUrl)
-        repoLink.textContent = 'Repo'
-            // Place them in the div.
-        linkDiv.appendChild(liveLink)
-        linkDiv.appendChild(repoLink)
-
-        // Place heading, copy, and links container inside the copy container.
-        copyContainer.appendChild(heading)
-        copyContainer.appendChild(copyText)
-        copyContainer.appendChild(linkDiv)
-
-        // Place whole copy container, with all of above, in the project article. 
-        article.appendChild(copyContainer)
-
-        // Project image and dotted accent border is in a div, placed in the article.
-        const imgDiv = document.createElement('div')
-            // Image and accent border
-        const accentDiv = document.createElement('div')
-        const projectImg = document.createElement('img')
-        imgDiv.classList = 'projectImg'
-        accentDiv.classList = 'projectAccent'
-        projectImg.setAttribute('src', array[i].imgUrl)
-        projectImg.setAttribute('alt', array[i].imgAlt)
-
-        // Place the image and accent in the image container.
-        imgDiv.appendChild(accentDiv)
-        imgDiv.appendChild(projectImg)
-
-        // Place image container in the project article.
-        article.appendChild(imgDiv)
-
-        // Finally, append article to the projects container.
-        projectsDiv.appendChild(article)
+    // Project heading
+    const heading = document.createElement('h3');
+    heading.textContent = project.title;
+    
+    // Project copy
+    const copyText = document.createElement('p');
+    copyText.innerText = project.copy;
+    
+    // Anchors for project urls
+    const linkDiv = document.createElement('div')
+    linkDiv.classList = 'projectLinks'
+      // Live url
+    const liveLink = document.createElement('a')
+    liveLink.setAttribute('href', project.liveUrl)
+    liveLink.textContent = 'Live'
+    linkDiv.appendChild(liveLink)
+    // Repo url - if the property exists
+    if (project.repoUrl) {
+      const repoLink = document.createElement('a')
+      repoLink.setAttribute('href', project.repoUrl)
+      repoLink.textContent = 'Repo'
+      linkDiv.appendChild(repoLink)
     }
+
+    // Place heading, copy, and links container inside the copy container.
+    copyContainer.appendChild(heading)
+    copyContainer.appendChild(copyText)
+    copyContainer.appendChild(linkDiv)
+
+    // Place whole copy container, with all of above, in the project article. 
+    article.appendChild(copyContainer)
+
+    // Project image and dotted accent border is in a div, placed in the article.
+    const imgDiv = document.createElement('div')
+    // Image and accent border
+    const accentDiv = document.createElement('div')
+    const projectImg = document.createElement('img')
+    imgDiv.classList = 'projectImg'
+    accentDiv.classList = 'projectAccent'
+    projectImg.setAttribute('src', project.imgUrl)
+    projectImg.setAttribute('alt', project.imgAlt)
+
+    // Place the image and accent in the image container.
+    imgDiv.appendChild(accentDiv)
+    imgDiv.appendChild(projectImg)
+
+    // Place image container in the project article.
+    article.appendChild(imgDiv)
+
+    // Finally, append article to the projects container.
+    projectsDiv.appendChild(article)
+  })
 }
 
 addProjects(projects)
