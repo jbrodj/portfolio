@@ -139,6 +139,22 @@ current(skillIcons, currentLearning)
 // Array to contain project data
 const projects = [
     {
+        title: 'My TELUS Universal Experiences',
+        liveUrl: 'https://www.telus.com/',
+        imgUrl: './assets/telusMyTelusView.png',
+        imgAlt: 'Screenshot of the My Telus App overview page.',
+        copy: `Full stack universal experiences for the authenticated account space in the My Telus experience. Including customer data API, app navigation, universal UI elements, and app-wide end-to-end. Built in React, Express & Node. Tested with Jest and Cypress using Github Actions for automated runs. Using Docker for containerization; deployed on GKE and monitored with Dynatrace.`,
+        accentColorClass: 'telus'
+    },
+    {
+        title: 'TELUS Cart, Checkout, Thank-you Journeys',
+        liveUrl: 'https://www.telus.com',
+        imgUrl: './assets/telusCheckoutView.png',
+        imgAlt: 'Screenshot of the Telus cart page with an iphone and plush alpaca in the cart.',
+        copy: `Full-stack e-commerce journeys for all new and existing business and consumer users across Canada. Built in React, Express & Node. Tested with Jest and Cypress using Github Actions for automated runs. Using Docker for containerization and Redis; deployed on GKE and monitored with Dynatrace.`,
+        accentColorClass: 'telus2'
+    },
+    {
         title: 'Gift Exchange Randomizer',
         liveUrl: 'https://giftexchange.netlify.app/',
         repoUrl: 'https://github.com/jbrodj/randomizer',
