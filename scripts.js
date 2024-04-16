@@ -111,7 +111,7 @@ function addSkillIcons(index) {
 // ====== INJECT CURRENT LEARNING ICON ======
 
 // --> Set current topic here! <--
-let currentLearning = 'CSS3';
+let currentLearning = 'MongoDB';
 
 // Store copy container in growth section.
 const growthCopy = document.getElementById('growthCopy');
