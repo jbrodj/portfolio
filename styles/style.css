@@ -878,8 +878,8 @@ h1 {
 .projectContainer a {
   border-bottom: 3px solid #0c8282;
 }
-.projectContainer a:last-of-type {
-  margin-left: 0.75rem;
+.projectContainer a:first-of-type {
+  margin-right: 0.75rem;
 }
 
 .projectLinks {
@@ -921,6 +921,24 @@ h1 {
 .projectContainer:nth-of-type(2n) .projectAccent {
   right: 10%;
   top: 7.5%;
+}
+
+.telus a {
+  color: #6f19ad;
+  border-bottom: 3px solid #6f19ad;
+}
+
+.telus .projectImg > div {
+  border: 0.25rem dotted rgba(111, 25, 173, 0.286);
+}
+
+.telus2 a {
+  color: #148f24;
+  border-bottom: 3px solid #148f24;
+}
+
+.telus2 .projectImg > div {
+  border: 0.25rem dotted rgba(20, 143, 36, 0.286);
 }
 
 .giftExchange a {
@@ -996,7 +1014,7 @@ h1 {
 .growthSection {
   position: relative;
   min-height: 0;
-  text-align: right;
+  text-align: center;
   margin-bottom: 0rem;
 }
 
@@ -1011,6 +1029,11 @@ h1 {
 .growthCopy h3 {
   text-align: left;
   margin-bottom: 1.5rem;
+}
+.growthCopy .learningTopic {
+  color: #0c8282;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 .growthCopy .learningNote {
   margin-top: 0.25rem;
@@ -1266,11 +1289,9 @@ h1 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-
   h1 {
     font-size: 2.5rem;
   }
-
   .arrowBuddies {
     margin: 1rem auto;
     -webkit-box-orient: horizontal;
@@ -1284,7 +1305,6 @@ h1 {
         -ms-flex-align: space-between;
             align-items: space-between;
   }
-
   .mainLogo {
     -webkit-transform: scale(60%);
             transform: scale(60%);
@@ -1296,17 +1316,14 @@ h1 {
     width: 100%;
     margin: 7rem auto;
   }
-
   h1, h2 {
     font-size: 2.5rem;
   }
-
   h3,
-section p,
-.projectLinks {
+  section p,
+  .projectLinks {
     padding: 0 1rem;
   }
-
   .sectionHeading {
     padding: 2rem 1rem 2.5rem 1rem;
   }
@@ -1317,16 +1334,13 @@ section p,
     padding: 0.12rem;
     height: 1.5rem;
   }
-
   header {
     min-height: 730px;
   }
-
   .mainLogo {
     -webkit-transform: scale(100%);
             transform: scale(100%);
   }
-
   .aboutSection {
     min-height: calc(100vh - 16rem);
   }
@@ -1371,7 +1385,6 @@ section p,
   .aboutSection .dashAccent2 {
     display: none;
   }
-
   .projectSection {
     padding-bottom: 0;
     margin-top: 10rem;
@@ -1434,11 +1447,9 @@ section p,
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg);
   }
-
   .growthSection {
     margin-bottom: 10rem;
   }
-
   .growthCopy {
     width: 90%;
     margin-bottom: 0;
@@ -1446,15 +1457,12 @@ section p,
   .growthCopy h3, .growthCopy p {
     padding: 0;
   }
-
   .contactSection::before {
     top: -8rem;
   }
-
   .contactInfo p {
     font-size: 1.5rem;
   }
-
   .contactNav {
     width: 60%;
   }
@@ -1469,42 +1477,35 @@ section p,
   .wrapper {
     width: 100%;
   }
-
   .projectSection {
     margin-top: 5rem;
   }
   .projectSection .sectionHeading p {
     margin-left: 3.8rem;
   }
-
   header {
     padding: 4rem 0 2rem 0;
     padding: 0;
     height: 100vh;
     min-height: 610px;
   }
-
   .headerWrapper {
     width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-
   h1, h2 {
     font-size: 2rem;
   }
-
   .mainLogo {
     -webkit-transform: scale(80%);
             transform: scale(80%);
     margin: -1rem 0;
   }
-
   .arrowBuddies {
     margin: 0 0 -0.5rem 0;
   }
-
   .arrowLink {
     position: absolute;
     margin: 0 auto;
@@ -1512,7 +1513,6 @@ section p,
     right: 0;
     bottom: -0.5rem;
   }
-
   .aboutSection p {
     margin-top: 0;
   }
@@ -1548,11 +1548,9 @@ section p,
   .aboutSection .dashAccent {
     border: 0.3rem dotted rgba(102, 51, 153, 0.397);
   }
-
   .aboutSection::after {
     bottom: -9rem;
   }
-
   .projectSection {
     padding: 0;
   }
@@ -1571,7 +1569,6 @@ section p,
   .projectSection .projectImg img {
     border-radius: 0;
   }
-
   .growthSection, .growthSection h3 {
     text-align: center;
   }
@@ -1581,7 +1578,6 @@ section p,
   .growthSection .growthCopy i, .growthSection h3 .growthCopy i {
     font-size: 3.25rem;
   }
-
   .homeArrow {
     right: -3.5rem;
     top: -2.25rem;
