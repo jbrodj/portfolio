@@ -31,7 +31,7 @@
 
 // === MID-SIZE STYLES ===
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
     // GENERAL STYLES
 
@@ -102,11 +102,15 @@
             div {
                 width: 13rem;
                 height: 13rem;
-                top: -2.5rem;
-                left: -3.25rem;
+                top: -6.5rem;
+                left: -9.25rem;
             }
             img, .overlay {
-                display: none;
+                width: 100%;
+                top: -1.5rem;
+                left: 0rem;
+                border-radius: 0.125rem;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
             }
         }
         .dashAccent {
@@ -242,6 +246,10 @@
         }
     }
 
+    p {
+      font-size: 0.9rem;
+    }
+
     
 // HEADER STYLES 
 
@@ -298,10 +306,6 @@
                 right: 0;
                 margin: 0 auto;
             }
-            
-            img, .overlay {
-                display: none;
-            }
         }
         
         .sectionLink {
@@ -352,7 +356,7 @@
     .growthSection, .growthSection h3 {
         text-align: center;
         a, .growthCopy p { 
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
 
         .growthCopy i {

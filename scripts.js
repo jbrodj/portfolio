@@ -143,7 +143,7 @@ const projects = [
         liveUrl: 'https://www.telus.com/',
         imgUrl: './assets/telusMyTelusView.png',
         imgAlt: 'Screenshot of the My Telus App overview page.',
-        copy: `Full stack universal experiences for the authenticated account space in the My Telus experience. Including customer data API, app navigation, universal UI elements, and app-wide end-to-end. Built in React, Express & Node. Tested with Jest and Cypress using Github Actions for automated runs. Using Docker for containerization; deployed on GKE and monitored with Dynatrace.`,
+        copy: `Full stack universal experiences for authenticated accounts in the My Telus app - including customer data API, app navigation, universal UI elements, and app-wide end-to-end. Built in React, Express & Node. Tested with Jest, Cypress, and Postman using Github Actions for automated runs. Using Docker for containerization; deployed on GKE and monitored with Dynatrace.`,
         accentColorClass: 'telus'
     },
     {
@@ -151,7 +151,7 @@ const projects = [
         liveUrl: 'https://www.telus.com',
         imgUrl: './assets/telusCheckoutView.png',
         imgAlt: 'Screenshot of the Telus cart page with an iphone and plush alpaca in the cart.',
-        copy: `Full-stack e-commerce journeys for all new and existing business and consumer users across Canada. Built in React, Express & Node. Tested with Jest and Cypress using Github Actions for automated runs. Using Docker for containerization and Redis; deployed on GKE and monitored with Dynatrace.`,
+        copy: `Full-stack e-commerce journeys for all new and existing business and consumer users across Canada. Built in React, Express & Node. Tested with Jest, Cypress, and Postman using Github Actions for automated runs. Using Docker for containerization and Redis; deployed on GKE and monitored with Dynatrace.`,
         accentColorClass: 'telus2'
     },
     {
@@ -229,12 +229,14 @@ const addProjects = (projects) => {
       // Live url
     const liveLink = document.createElement('a')
     liveLink.setAttribute('href', project.liveUrl)
+    liveLink.setAttribute('target', 'blank')
     liveLink.textContent = 'Live'
     linkDiv.appendChild(liveLink)
     // Repo url - if the property exists
     if (project.repoUrl) {
       const repoLink = document.createElement('a')
       repoLink.setAttribute('href', project.repoUrl)
+      repoLink.setAttribute('target', 'blank')
       repoLink.textContent = 'Repo'
       linkDiv.appendChild(repoLink)
     }

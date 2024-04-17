@@ -20,13 +20,12 @@
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    margin-left: -4rem;
+    margin-left: 1.25rem;
     padding: 3rem 0.75rem 3rem 0;
     width: calc(50% + 4rem);
     z-index: 1;
     p {
-        margin: 1rem 0;
-        width: 75%;
+        margin: 1rem 0.5rem;
     }
     
     .sectionLink:nth-of-type(2) {
@@ -84,7 +83,7 @@
     width: 40vw;
     max-width: 29rem;
     border-radius: 50%;
-    border: 0.75rem dotted rgba(102, 51, 153, 0.225);
+    border: 0.95rem dotted rgba(102, 51, 153, 0.225);
     z-index: -1;
 }
 
@@ -92,9 +91,9 @@
     position: absolute;
     right: 0;
     top: 7.5%;
-    height: 82.5%;
-    width: 55%;
-    border: 0.25rem dotted rgba(102, 51, 153, 0.055);
+    height: 85%;
+    width: 75%;
+    border: 0.5rem dotted rgba(102, 51, 153, 0.055);
     z-index: -2;
     border-radius: 0.75rem;
 }
