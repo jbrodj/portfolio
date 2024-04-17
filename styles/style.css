@@ -717,14 +717,13 @@ h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
-  margin-left: -4rem;
+  margin-left: 1.25rem;
   padding: 3rem 0.75rem 3rem 0;
   width: calc(50% + 4rem);
   z-index: 1;
 }
 .aboutCopy p {
-  margin: 1rem 0;
-  width: 75%;
+  margin: 1rem 0.5rem;
 }
 .aboutCopy .sectionLink:nth-of-type(2) {
   right: 9.7rem;
@@ -780,7 +779,7 @@ h1 {
   width: 40vw;
   max-width: 29rem;
   border-radius: 50%;
-  border: 0.75rem dotted rgba(102, 51, 153, 0.225);
+  border: 0.95rem dotted rgba(102, 51, 153, 0.225);
   z-index: -1;
 }
 
@@ -788,9 +787,9 @@ h1 {
   position: absolute;
   right: 0;
   top: 7.5%;
-  height: 82.5%;
-  width: 55%;
-  border: 0.25rem dotted rgba(102, 51, 153, 0.055);
+  height: 85%;
+  width: 75%;
+  border: 0.5rem dotted rgba(102, 51, 153, 0.055);
   z-index: -2;
   border-radius: 0.75rem;
 }
@@ -1311,7 +1310,7 @@ h1 {
     margin: -4rem 0;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   section {
     width: 100%;
     margin: 7rem auto;
@@ -1373,11 +1372,16 @@ h1 {
   .aboutSection .aboutImg div {
     width: 13rem;
     height: 13rem;
-    top: -2.5rem;
-    left: -3.25rem;
+    top: -6.5rem;
+    left: -9.25rem;
   }
   .aboutSection .aboutImg img, .aboutSection .aboutImg .overlay {
-    display: none;
+    width: 100%;
+    top: -1.5rem;
+    left: 0rem;
+    border-radius: 0.125rem;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.5)));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
   }
   .aboutSection .dashAccent {
     border: 0.5rem dotted rgba(102, 51, 153, 0.397);
@@ -1483,6 +1487,9 @@ h1 {
   .projectSection .sectionHeading p {
     margin-left: 3.8rem;
   }
+  p {
+    font-size: 0.9rem;
+  }
   header {
     padding: 4rem 0 2rem 0;
     padding: 0;
@@ -1532,9 +1539,6 @@ h1 {
     right: 0;
     margin: 0 auto;
   }
-  .aboutSection .aboutImg img, .aboutSection .aboutImg .overlay {
-    display: none;
-  }
   .aboutSection .sectionLink {
     position: relative;
     margin: 0 auto;
@@ -1573,7 +1577,7 @@ h1 {
     text-align: center;
   }
   .growthSection a, .growthSection .growthCopy p, .growthSection h3 a, .growthSection h3 .growthCopy p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .growthSection .growthCopy i, .growthSection h3 .growthCopy i {
     font-size: 3.25rem;
