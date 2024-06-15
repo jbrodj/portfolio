@@ -27,6 +27,10 @@ const skillIcons = [
         class: 'sass-original'
     },
     {
+        title: 'C',
+        class: 'c-plain'
+    },
+    {
         title: 'Python',
         class: 'python-plain'
     },
