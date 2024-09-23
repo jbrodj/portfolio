@@ -119,11 +119,11 @@ export const skillIcons = [
   },
   {
       title: 'ExpressJS',
-      class: 'express-original-wordmark'
+      class: 'express-original'
   },
   {
       title: 'Google Cloud Platform',
-      class: 'googlecloud-plain-wordmark'
+      class: 'googlecloud-plain'
   },
   {
       title: 'Jest',
@@ -139,7 +139,7 @@ export const skillIcons = [
   },
   {
       title: 'Postman',
-      class: 'postman-plain-wordmark'
+      class: 'postman-plain'
   },
   {
       title: 'Jira',
@@ -159,6 +159,6 @@ export const skillIcons = [
   },
   {
       title: 'SQL',
-      class: 'sqlite-plain-wordmark'
+      class: 'sqlite-plain'
   }
 ]
