@@ -9,11 +9,11 @@ const paragraph = document.getElementById('skillParagraph')
 skillIcons.forEach(skill => addSkillIcons(skill))
 
 function addSkillIcons(index) {
-    const icon = document.createElement('i');
-    icon.title = index.title;
-    icon.classList = `devicon-${index.class}`;
+    const icon = document.createElement('i')
+    icon.title = index.title
+    icon.classList = `devicon-${index.class}`
     icon.setAttribute('alt', `${index.title}`)
-    paragraph.appendChild(icon);
+    paragraph.appendChild(icon)
 }
 // ==========================================
 
@@ -21,19 +21,19 @@ function addSkillIcons(index) {
 // ====== INJECT CURRENT LEARNING ICON ======
 
 // --> Set current topic here! <--
-let currentLearning = 'MongoDB';
+let currentLearning = 'MongoDB'
 
 // Store copy container in growth section.
-const growthCopy = document.getElementById('growthCopy');
+const growthCopy = document.getElementById('growthCopy')
 // Create & append icon element.
-const currentIcon = document.createElement('i');
+const currentIcon = document.createElement('i')
 growthCopy.appendChild(currentIcon)
 
 // Loop over icons array, find index with current title value, and set class, alt text, and title from that index.
 function current(array, title) {
     for (let i = 0; i < array.length; i++) {
         if (array[i].title === title) {
-            currentIcon.classList = `currentLearning devicon-${array[i].class}`;
+            currentIcon.classList = `currentLearning devicon-${array[i].class}`
             currentIcon.setAttribute('alt', `${title} logo.`)
             currentIcon.title = title
         }
@@ -53,20 +53,20 @@ const addProjects = (projects) => {
     const projectsDiv = document.getElementById('allProjects')
 
     // Each project is contained in an article with individual class for that project's colour scheme.
-    const article = document.createElement('article');
-    article.classList = `projectContainer ${project.accentColorClass}`;
+    const article = document.createElement('article')
+    article.classList = `projectContainer ${project.accentColorClass}`
     
     // Project copy is a flex container containing heading, descriptive text, and a div containing live and repo links. 
-    const copyContainer = document.createElement('div');
-    copyContainer.classList = 'projectCopy';
+    const copyContainer = document.createElement('div')
+    copyContainer.classList = 'projectCopy'
 
     // Project heading
-    const heading = document.createElement('h3');
-    heading.textContent = project.title;
+    const heading = document.createElement('h3')
+    heading.textContent = project.title
     
     // Project copy
-    const copyText = document.createElement('p');
-    copyText.innerText = project.copy;
+    const copyText = document.createElement('p')
+    copyText.innerText = project.copy
     
     // Anchors for project urls
     const linkDiv = document.createElement('div')
