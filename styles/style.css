@@ -1098,6 +1098,18 @@ h1 {
 }
 .contactSection .arrowLink {
   margin-top: 2.5rem;
+  display: inline-block;
+  width: 3.5rem;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.homeArrowContainer {
+  height: 3rem;
+  position: relative;
 }
 
 .homeArrow {
