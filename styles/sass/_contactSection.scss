@@ -10,10 +10,24 @@
     a:focus {
         border: none;
     }
+    .sectionHeading p {
+      margin-left: 6rem;
+    }
+    .arrowLink {
+      margin-top: 2.5rem;
+      display: inline-block;
+      width: 3.5rem;
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
 }
 
-.contactSection .h2Container {
-    position: relative;
+.homeArrowContainer {
+  height: 3rem;
+  position: relative;
 }
 
 .homeArrow {
@@ -22,10 +36,7 @@
     border-bottom: 0.5rem dotted $accentText;
     border-right: 0.5rem dotted $accentText;
     transform: rotate(-135deg);
-    position: absolute;
-    bottom: -1rem;
-    right: -4rem;
-    margin: 0;
+    margin: 0 auto;
     animation: bounceUp 5s ease-in infinite;
 }
 
@@ -73,6 +84,6 @@
         margin: 0 auto;
     }
     a.resumeLink:hover, a.resumeLink:focus .resume {
-        border: 3px solid gold;
+        border: 3px solid $beakAccentColor;
     }
 }

@@ -3,26 +3,26 @@
 .triangleUp {
     width: 0; 
     height: 0; 
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid $accentText;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $accentText;
 }
 
 .triangleDown {
     width: 0; 
     height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #f0744f;
-}
-
-.triangleLeft {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid $accentIcon1;
+  }
+  
+  .triangleLeft {
     width: 0; 
     height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-right:10px solid gold; 
-}
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-right:15px solid $beakAccentColor;
+  }
 
 // ===BIRB LOGO===
 
@@ -34,6 +34,7 @@
     width: 350px;
     border-radius: 50%;
     background-color: $neutralColor;
+    background-color: $accentText;
     padding: 0 0 0.25rem 0;
 }
 
@@ -97,8 +98,9 @@
     width: 20%;
     border-radius: 100%;
     border-bottom: 3px solid $lightColor;
+    border-bottom: 2px solid $neutralColor;
     position: absolute;
-    transform: rotate(20deg);
+    transform: rotate(35deg);
     top: 20%;
     left: 40%;
     z-index: 2;
@@ -109,6 +111,7 @@
     background-color: $beakAccentColor;
     /* border top needs to be ~0.75% of container height */
     border-top: 3px solid white;
+    border-top: 3px solid $neutralColor;
     position: absolute;
     border-radius: 50%;
     top: 50%;
@@ -117,7 +120,6 @@
     transform: rotate(28deg);
 }
 .wingCircle {
-    background-color: white;
     background-color: $darkColor;
     height: 20%;
     width: 20%;
@@ -154,7 +156,7 @@
 
     .logoLink:hover .mainLogo,
     .logoLink:focus .mainLogo {
-        background-color: $darkColor;
+        background-color: $neutralColor;
     }
 
     .mainLogo {

@@ -1,22 +1,18 @@
-// Original birb colours
-// Dark blue-green #20b2aa / lightseagreen
-// Light blue-green #BCF0EE
-// Beige #F6F2D8
-
-$primaryColor: #66cdaa;
-
-$darkColor: #70B8CC;
-
-$lightColor: #A6ECFF;
-
-$beakAccentColor: gold;
-
+// Hero and birb image
+$heroColor: #b0dece;
+$darkColor: #a0c1cf;
+$lightColor: #e1f3fc;
+$beakAccentColor: #FFD680;
 $neutralColor: #f8f6e9;
+// $neutralColor: #667B85;
 
-$angleBackground: rgb(240, 246, 246);
+// General use
+$angleBackground: #eff3f5;
+$nearBlack: #39454a;
 
-$nearBlack: #222;
-
-$nearBlack: #222;
-
-$accentText: #0c8282;;
+// Other accents (copy, triangles and icons)
+$accentText: #466e82;
+$accentIcon1: #E0746B;
+$accentIcon2: #905f96;
+$accentIcon2-faded: #905f9638;
+$accentText-faded: #667b8510;
