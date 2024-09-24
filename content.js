@@ -67,19 +67,19 @@ export const projects = [
 export const skillIcons = [
   {
       title: 'HTML5',
-      class: 'html5-plain-wordmark', 
+      class: 'html5-plain', 
   },
   {
       title: 'CSS3',
-      class: 'css3-plain-wordmark'
+      class: 'css3-plain'
   },
   {
-      title: 'JavaScript ES6',
+      title: 'JavaScript ES6+',
       class: 'javascript-plain'
   },
   {
       title: 'React',
-      class: 'react-original-wordmark'
+      class: 'react-original'
   },
   {
       title: 'Sass',
@@ -87,15 +87,15 @@ export const skillIcons = [
   },
   {
       title: 'C',
-      class: 'c-plain-wordmark'
+      class: 'c-plain'
   },
   {
       title: 'Python',
-      class: 'python-plain-wordmark'
+      class: 'python-plain'
   },
   {
       title: 'NodeJS',
-      class: 'nodejs-plain-wordmark'
+      class: 'nodejs-plain'
   },
   {
       title: 'NPM',
@@ -103,7 +103,7 @@ export const skillIcons = [
   },
   {
       title: 'GitHub',
-      class: 'github-original-wordmark'
+      class: 'github-original'
   },
   {
       title: 'GitHub Actions',
@@ -111,11 +111,11 @@ export const skillIcons = [
   },
   {
       title: 'Git',
-      class: 'git-plain-wordmark'
+      class: 'git-plain'
   },
   {
       title: 'Docker',
-      class: 'docker-plain-wordmark'
+      class: 'docker-plain'
   },
   {
       title: 'ExpressJS',
@@ -131,11 +131,11 @@ export const skillIcons = [
   },
   {
       title: 'Cypress',
-      class: 'cypressio-plain-wordmark'
+      class: 'cypressio-plain'
   },
   {
       title: 'ESLint',
-      class: 'eslint-plain-wordmark'
+      class: 'eslint-plain'
   },
   {
       title: 'Postman',
@@ -143,22 +143,26 @@ export const skillIcons = [
   },
   {
       title: 'Jira',
-      class: 'jira-plain-wordmark'
+      class: 'jira-plain'
   },
   {
       title: 'Confluence',
-      class: 'confluence-plain-wordmark'
+      class: 'confluence-plain'
   },
   {
       title: 'MongoDB',
-      class: 'mongodb-plain-wordmark'
+      class: 'mongodb-plain'
   },
   {
       title: 'Flask',
-      class: 'flask-original-wordmark'
+      class: 'flask-original'
   },
   {
       title: 'SQL',
       class: 'sqlite-plain'
+  },
+  {
+      title: 'Bootstrap',
+      class: 'bootstrap-plain'
   }
 ]
