@@ -279,6 +279,7 @@
     // ABOUT SECTION STYLES
     .aboutSection{
         .aboutCopy {
+          padding: 1rem 0;
           p {
             margin-top: 0;
           }
@@ -353,6 +354,9 @@
         a, .growthCopy p { 
             font-size: 0.8rem;
         }
+        .sectionHeading p {
+          margin-left: 4.25rem;
+        }
 
         .growthCopy i {
             font-size: 3.25rem;
@@ -361,5 +365,9 @@
 
 
     // CONTACT SECTION STYLES
-    
+    .contactSection {
+      .sectionHeading p {
+        margin-left: 4.5rem;
+      }
+  }
 }

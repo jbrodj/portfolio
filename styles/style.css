@@ -1504,6 +1504,9 @@ h1 {
   .arrowBuddies {
     margin: 0.25rem 0 -0.5rem 0;
   }
+  .aboutSection .aboutCopy {
+    padding: 1rem 0;
+  }
   .aboutSection .aboutCopy p {
     margin-top: 0;
   }
@@ -1566,7 +1569,13 @@ h1 {
   .growthSection a, .growthSection .growthCopy p, .growthSection h3 a, .growthSection h3 .growthCopy p {
     font-size: 0.8rem;
   }
+  .growthSection .sectionHeading p, .growthSection h3 .sectionHeading p {
+    margin-left: 4.25rem;
+  }
   .growthSection .growthCopy i, .growthSection h3 .growthCopy i {
     font-size: 3.25rem;
+  }
+  .contactSection .sectionHeading p {
+    margin-left: 4.5rem;
   }
 }
