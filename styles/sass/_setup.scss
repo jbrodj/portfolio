@@ -72,8 +72,9 @@ a:focus,
 .projectSection a:focus,
 section .projectSection a:focus,
 .projectSection a:hover {
-    color: gold;
-    border-bottom: 3px solid gold;
+    color: $beakAccentColor;
+    color: $accentIcon1;
+    border-bottom: 3px solid $accentIcon1;
 }
 
 section {

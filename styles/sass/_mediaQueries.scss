@@ -114,7 +114,7 @@
             }
         }
         .dashAccent {
-            border: 0.5rem dotted rgba(102, 51, 153, 0.397);
+            border: 0.5rem dotted $accentIcon2-faded;
         }
         .dashAccent2 {
             display: none;
@@ -324,7 +324,7 @@
             right: 0rem;
         }
         .dashAccent {
-            border: 0.3rem dotted rgba(102, 51, 153, 0.397);
+            border: 0.3rem dotted $accentIcon2-faded;
         }
     }
     

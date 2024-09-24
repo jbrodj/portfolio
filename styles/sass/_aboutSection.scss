@@ -83,7 +83,7 @@
     width: 40vw;
     max-width: 29rem;
     border-radius: 50%;
-    border: 0.95rem dotted rgba(102, 51, 153, 0.225);
+    border: 0.95rem dotted $accentIcon2-faded;
     z-index: -1;
 }
 
@@ -93,7 +93,7 @@
     top: 7.5%;
     height: 85%;
     width: 75%;
-    border: 0.5rem dotted rgba(102, 51, 153, 0.055);
+    border: 0.5rem dotted $accentText-faded;
     z-index: -2;
     border-radius: 0.75rem;
 }
@@ -109,7 +109,7 @@
     height: 0;
     border-style: solid;
     border-width: 4rem 0 4rem 100vw;
-    border-color: $primaryColor transparent transparent $primaryColor;
+    border-color: $heroColor transparent transparent $heroColor;
 }
 
 .aboutSection::after {

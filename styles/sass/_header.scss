@@ -6,7 +6,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: $primaryColor;
+    background-color: $heroColor;
     position: relative;
     padding: 6rem 0;
     overflow: hidden;
@@ -53,15 +53,15 @@ h1 {
 
 .arrowLink:hover .downArrow,
 .arrowLink:focus-within .downArrow {
-    border-bottom: 0.5rem dotted gold;
-    border-right: 0.5rem dotted gold;
+    border-bottom: 0.5rem dotted $beakAccentColor;
+    border-right: 0.5rem dotted $beakAccentColor;
     animation: wiggle 0.5s ease 1;
 }
 
 .arrowLink:hover .homeArrow,
 .arrowLink:focus-within .homeArrow {
-        border-bottom: 0.5rem dotted gold;
-    border-right: 0.5rem dotted gold;
+    border-bottom: 0.5rem dotted $beakAccentColor;
+    border-right: 0.5rem dotted $beakAccentColor;
     animation: wiggleUp 0.5s ease 1;
 }
 

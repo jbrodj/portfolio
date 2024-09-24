@@ -38,8 +38,8 @@
     margin: -1rem auto 0 auto;
     padding: 1.25rem;
     width: 60%;
-    max-width: 600px;
-    border: 0.25rem dotted rgba(102, 51, 153, 0.116);
+    max-width: 650px;
+    border: 0.25rem dotted $accentText-faded;
     border-radius: 1.5rem;
 
     h3 {
@@ -84,9 +84,9 @@
     }
 
     i:nth-of-type(3n - 1) {
-        color: rebeccapurple;
+        color: $accentIcon2;
     }
     i:nth-of-type(3n) {
-        color: #bb5757;
+        color: $accentIcon1;
     }
 }
