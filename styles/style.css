@@ -386,7 +386,7 @@ a {
 }
 
 i {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .sectionHeading h2 {
@@ -1045,7 +1045,7 @@ h1 {
   color: #466e82;
   display: inline-block;
   width: 100%;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 1rem;
 }
@@ -1061,7 +1061,6 @@ h1 {
   margin-bottom: 0.75rem;
 }
 .learningHistory i {
-  font-size: 2rem;
   display: inline-block;
   color: #466e82;
   margin: 0.25rem;
@@ -1157,9 +1156,6 @@ h1 {
 }
 .contactNav a {
   margin: 0 1rem;
-}
-.contactNav i {
-  font-size: 2rem;
 }
 
 .resumeContainer h3 {
