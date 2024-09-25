@@ -15,7 +15,7 @@ export const setCurrentLearningTopic = (array, title, copy) => {
   // Store copy container in growth section.
   const growthCopy = document.getElementById('growthCopy')
   // Set title to current topic
-  const growthTitle = document.getElementsByClassName('learningTopic')[0]
+  const growthTitle = document.querySelector('.learningTopic')
   growthTitle.textContent = title
   // Create & append icon element.
   const currentIcon = document.createElement('i')
@@ -29,7 +29,7 @@ export const setCurrentLearningTopic = (array, title, copy) => {
     }
   }
   // Set learning note text to topic description.
-  const currentLearningCopy = document.getElementsByClassName('learningNote')[0]
+  const currentLearningCopy = document.querySelector('.learningNote')
   currentLearningCopy.textContent = copy
 }
 

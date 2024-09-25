@@ -386,7 +386,7 @@ a {
 }
 
 i {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .sectionHeading h2 {
@@ -1045,7 +1045,7 @@ h1 {
   color: #466e82;
   display: inline-block;
   width: 100%;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 1rem;
 }
@@ -1061,7 +1061,6 @@ h1 {
   margin-bottom: 0.75rem;
 }
 .learningHistory i {
-  font-size: 2rem;
   display: inline-block;
   color: #466e82;
   margin: 0.25rem;
@@ -1157,9 +1156,6 @@ h1 {
 }
 .contactNav a {
   margin: 0 1rem;
-}
-.contactNav i {
-  font-size: 2rem;
 }
 
 .resumeContainer h3 {
@@ -1307,8 +1303,7 @@ h1 {
     font-size: 2.5rem;
   }
   .mainLogo {
-    -webkit-transform: scale(60%);
-            transform: scale(60%);
+    scale: 60%;
     margin: -4rem 0;
   }
 }
@@ -1335,12 +1330,15 @@ h1 {
     padding: 0.12rem;
     height: 1.5rem;
   }
+  .arrowLink div {
+    scale: 60%;
+  }
   header {
     min-height: 730px;
   }
   .mainLogo {
-    -webkit-transform: scale(100%);
-            transform: scale(100%);
+    scale: 80%;
+    margin-top: -1.75rem;
   }
   .aboutSection .sectionHeading p {
     margin-left: 3.3rem;
@@ -1509,11 +1507,11 @@ h1 {
     font-size: 2rem;
   }
   .mainLogo {
-    -webkit-transform: scale(80%);
-            transform: scale(80%);
-    margin: -1rem 0;
+    scale: 60%;
+    margin: -2.5rem 0;
   }
   .arrowBuddies {
+    scale: 80%;
     margin: 0.25rem 0 -0.5rem 0;
   }
   .aboutSection .aboutCopy {

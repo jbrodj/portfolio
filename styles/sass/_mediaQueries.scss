@@ -16,7 +16,7 @@
         }
 
         .mainLogo {
-            transform: scale(60%);
+            scale: 60%;
             margin: -4rem 0;
         }
 }
@@ -54,6 +54,10 @@
         }
     }
 
+  .arrowLink div {
+    scale: 60%;
+    }
+
 
 // HEADER STYLES 
     
@@ -62,7 +66,8 @@
     }
 
     .mainLogo {
-        transform: scale(100%);
+        scale: 80%;
+        margin-top: -1.75rem;
     }
 
 // ABOUT SECTION STYLES
@@ -268,11 +273,12 @@
     }
 
     .mainLogo {
-        transform: scale(80%);
-        margin: -1rem 0;
+        scale: 60%;
+        margin: -2.5rem 0;
     }
 
     .arrowBuddies {
+      scale: 80%;
         margin: 0.25rem 0 -0.5rem 0;
     }
     
