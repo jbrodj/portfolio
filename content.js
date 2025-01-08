@@ -1,6 +1,15 @@
 // Array of project data
 export const projects = [
   {
+      title: 'Take a Hike',
+      demoUrl: 'https://youtu.be/FIYaefWO7AU&t=29s',
+      repoUrl: 'https://github.com/jbrodj/take-a-hike',
+      imgUrl: './assets/take-a-hike.png',
+      imgAlt: 'Screenshot of the Take a Hike "my hikes" view, showing location and distance information about a recent hike.',
+      copy: `Full stack social media application for sharing information about hikes and following other users to keep up with their activity! Serving user-generated content with a Python server with Flask, using SQLite for databases, JavaScript for UI interactivity, and a Cloudinary integration for image hosting.`,
+      accentColorClass: 'takeAHike'
+  },
+  {
       title: 'My TELUS Universal Experiences',
       liveUrl: 'https://www.telus.com/',
       imgUrl: './assets/telusMyTelusView.png',
@@ -24,42 +33,6 @@ export const projects = [
       imgAlt: 'Screenshot of a Secret Santa app with a festive foliage theme.',
       copy: `Name list randomizer built with JavaScript for your favourite holiday gift exchange games like Secret Santa and White Elephant (for a list you won't have to check twice)! Featuring a background image from Erol Ahmed.`,
       accentColorClass: 'giftExchange'
-  },
-  {
-      title: 'iBag of Holding',
-      liveUrl: 'https://ibagofholding.netlify.app/',
-      repoUrl: 'https://github.com/jbrodj/ibag-of-holding',
-      imgUrl: './assets/ibagOfHolding.jpg',
-      imgAlt: 'Screenshot of D&D inventory app showing an input form and several items stored in an inventory list.',
-      copy: `Inventory app for your D&D party built in React, and using Firebase to store item names & quantities as persistent data, and update the database from user inputs in real time.`,
-      accentColorClass: 'iBag'
-  },
-  {
-      title: `Let's Watch a Movie With...`,
-      liveUrl: 'https://bootcampprojecttwo.github.io/movieApp/',
-      repoUrl: 'https://github.com/bootcampProjectTwo/movieApp',
-      imgUrl: './assets/letsWatchAMovie2.jpg',
-      imgAlt: 'Screenshot of a movie recommendation app with a stylized title and input form',
-      copy: `Movie finder app that generates a list of recommended movies based on multiple optional user inputs. This project was built using JavaScript with the Open Movie Database API as a paired programming project.`,
-      accentColorClass: 'letsWatch'
-  },
-  {
-      title: 'Which Game Should We Play?!',
-      liveUrl: 'https://whichgameshouldweplay.netlify.app/',
-      repoUrl: 'https://github.com/jbrodj/which-game-should-we-play.git',
-      imgUrl: './assets/boardGameFinder.jpg',
-      imgAlt: 'Screenshot of the primary interface of a board game recommendation app featuring an input form with several range sliders.',
-      copy: `Board game recommendation app built in jQuery using the Board Game Atlas API. It features multiple range sliders for providing user input for number of players, age, and length of the game!`,
-      accentColorClass: 'whichGame'
-  },
-      {
-      title: 'Bar One (PSD Conversion)',
-      liveUrl: 'https://jbrodj.github.io/brodie-day-project-one/',
-      repoUrl: 'https://github.com/jbrodj/brodie-day-project-one',
-      imgUrl: './assets/barOneConversion.jpg',
-      imgAlt: 'Screenshot of the landing page of a website for a fictional bar featuring a navigation bar and a heading overlaid on greyscale images of bar settings.',
-      copy: `Fully responsive multi-page PSD conversion for a fictional nightlife venue!`,
-      accentColorClass: 'barOne'
   }
 ]
 
@@ -92,6 +65,14 @@ export const skillIcons = [
   {
       title: 'Python',
       class: 'python-plain'
+  },
+  {
+      title: 'Flask',
+      class: 'flask-original'
+  },
+  {
+      title: 'SQL',
+      class: 'sqlite-plain'
   },
   {
       title: 'NodeJS',
@@ -130,12 +111,12 @@ export const skillIcons = [
       class: 'jest-plain'
   },
   {
-      title: 'Cypress',
-      class: 'cypressio-plain'
+      title: 'Pytest',
+      class: 'pytest-plain'
   },
   {
-      title: 'ESLint',
-      class: 'eslint-plain'
+      title: 'Cypress',
+      class: 'cypressio-plain'
   },
   {
       title: 'Postman',
@@ -152,14 +133,6 @@ export const skillIcons = [
   {
       title: 'MongoDB',
       class: 'mongodb-plain'
-  },
-  {
-      title: 'Flask',
-      class: 'flask-original'
-  },
-  {
-      title: 'SQL',
-      class: 'sqlite-plain'
   },
   {
       title: 'Bootstrap',

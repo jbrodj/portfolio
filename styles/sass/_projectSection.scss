@@ -21,6 +21,9 @@
         text-align: right;
         width: 42.5%;
     }
+    a {
+      border-bottom: 2px solid $nearBlack;
+    }
 
     .projectImg {
         position: relative;
@@ -36,10 +39,6 @@
 
     p {
         margin: 1rem 0;
-    }
-
-    a {
-        border-bottom: 3px solid $accentText;
     }
 
     a:first-of-type {
@@ -86,9 +85,20 @@
     top: 7.5%;
 }
 
+.takeAHike {
+    a {
+        color: #475043;
+        border-color: #475043;
+    }
+    .projectImg > div {
+        border: 0.25rem dotted #deead8;
+    } 
+}
+
 .telus a {
     color: #6f19ad;
-    border-bottom: 3px solid #6f19ad;
+    border-color: #6f19ad;
+    // border-bottom: 3px solid #6f19ad;
 }
 .telus .projectImg > div {
     border: 0.25rem dotted rgba(111, 25, 173, 0.286);
@@ -96,7 +106,7 @@
 
 .telus2 a {
     color: #148f24;
-    border-bottom: 3px solid #148f24;
+    border-color: #148f24;
 }
 .telus2 .projectImg > div {
     border: 0.25rem dotted rgba(20, 143, 36, 0.286);
@@ -105,7 +115,7 @@
 .giftExchange {
     a {
         color: #538168;
-        border-bottom: 3px solid #538168;
+        border-color: #538168;
     }
     .projectImg > div {
         border: 0.25rem dotted #41504149;
