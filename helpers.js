@@ -58,12 +58,22 @@ export const addProjects = (projects) => {
     // Anchors for project urls
     const linkDiv = document.createElement('div')
     linkDiv.classList = 'projectLinks'
-      // Live url
-    const liveLink = document.createElement('a')
-    liveLink.setAttribute('href', project.liveUrl)
-    liveLink.setAttribute('target', 'blank')
-    liveLink.textContent = 'Live'
-    linkDiv.appendChild(liveLink)
+      // Live url - if the property exists
+    if (project.liveUrl) {
+      const liveLink = document.createElement('a')
+      liveLink.setAttribute('href', project.liveUrl)
+      liveLink.setAttribute('target', 'blank')
+      liveLink.textContent = 'Live'
+      linkDiv.appendChild(liveLink)
+    }
+    // Demo url - if the property exists
+    if (project.demoUrl) {
+      const demoLink = document.createElement('a')
+      demoLink.setAttribute('href', project.demoUrl)
+      demoLink.setAttribute('target', 'blank')
+      demoLink.textContent = 'Demo'
+      linkDiv.appendChild(demoLink)
+    }
     // Repo url - if the property exists
     if (project.repoUrl) {
       const repoLink = document.createElement('a')
