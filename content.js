@@ -6,7 +6,7 @@ export const projects = [
       repoUrl: 'https://github.com/jbrodj/take-a-hike',
       imgUrl: './assets/take-a-hike.png',
       imgAlt: 'Screenshot of the Take a Hike "my hikes" view, showing location and distance information about a recent hike.',
-      copy: `Full stack social media application for sharing information about hikes and following other users to keep up with their activity! Serving user-generated content with a Python server with Flask, using SQLite for databases, JavaScript for UI interactivity, and a Cloudinary integration for image hosting.`,
+      copy: `Full stack social media application for sharing information about hikes and following other users to keep up with their activity! Serving user-generated content with a Python server with Flask, using SQLite for databases, JavaScript for UI interactivity, and a Cloudinary integration for image hosting. Tested with Pytest, using Github Actions for automated lint and unit testing.`,
       accentColorClass: 'takeAHike'
   },
   {
