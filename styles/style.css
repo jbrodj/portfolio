@@ -721,14 +721,13 @@ h1 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0 1.25rem;
-  padding: 3rem 0.75rem 3rem 0;
-  padding: 4rem 1.5rem 4rem 0;
+  margin-left: 1.5rem;
+  padding: 4rem 0;
   width: calc(50% + 4rem);
   z-index: 1;
 }
 .aboutCopy p {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 1.5rem;
 }
 .aboutCopy .sectionLink:nth-of-type(2) {
   right: 9.7rem;
@@ -737,7 +736,7 @@ h1 {
   font-size: 1.1rem;
   font-weight: 700;
   color: #466e82;
-  width: 100%;
+  margin-right: 0;
 }
 
 .sectionLink {
@@ -756,7 +755,6 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.25rem;
-  border-radius: 5rem;
   z-index: 1;
 }
 
@@ -766,7 +764,6 @@ h1 {
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.8)));
   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
-  border-radius: 5rem;
 }
 
 .dashAccent {
@@ -781,17 +778,6 @@ h1 {
   border-radius: 50%;
   border: 0.95rem dotted rgba(144, 95, 150, 0.2196078431);
   z-index: -1;
-}
-
-.dashAccent2 {
-  position: absolute;
-  right: 0;
-  top: 7.5%;
-  height: 85%;
-  width: 75%;
-  border: 0.5rem dotted rgba(102, 123, 133, 0.062745098);
-  z-index: -2;
-  border-radius: 2rem;
 }
 
 .aboutSection::before {
@@ -1359,7 +1345,7 @@ h1 {
   .aboutSection .aboutCopy {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0 2.5rem 0;
   }
   .aboutSection .aboutCopy p {
     width: 100%;
