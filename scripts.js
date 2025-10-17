@@ -11,8 +11,8 @@ skillIcons.forEach(skill => addSkillIcons(skill))
 
 // ====== INJECT CURRENT LEARNING ICON ======
 
-let currentTopic = 'Python' // <-- Set current topic here
-let currentDescription = '{ Building a full-stack app with Python, Flask, and SQL }' // <-- Set description here
+let currentTopic = 'ExpressJS' // <-- Set current topic here
+let currentDescription = `{ Building a full-stack app with React, Express, & MySQL }` // <-- Set description here
 
 setCurrentLearningTopic(skillIcons, currentTopic, currentDescription)
 
